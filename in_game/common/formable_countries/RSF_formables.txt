@@ -1,0 +1,92 @@
+﻿# Poland Ruthenia Circassia changed
+
+TRY_REPLACE:POL_f = { # Poland
+
+	level = 2
+	required_locations_fraction = 0.65
+	rule = historical
+	potential = {
+		culture = { has_culture_group = culture_group:polish_group }
+	}
+	allow = {
+		owns = location:krakow
+		owns = location:warsaw
+	}
+	
+	name = POL
+	flag = POL
+	adjective = POL_ADJ
+	tag = POL
+	color = map_POL
+	
+	areas = {
+		central_poland_area
+		greater_poland_area
+		lesser_poland_area
+		mazovia_area
+		silesia_area
+	}
+	form_effect = {
+	}
+}
+
+TRY_REPLACE:UKR_f = { #Ruthenia
+
+	level = 3
+	required_locations_fraction = 0.6
+	rule = plausible
+	potential = {
+		OR = {
+			culture = culture:halychian_culture
+			culture = culture:polatskian_culture
+			culture = culture:polesian_culture
+			culture = culture:ruthenian
+			culture = culture:severian
+			culture = culture:volhynian_culture
+			culture = culture:rusyn_culture
+			culture = culture:cossack_culture
+			culture = culture:smolenskian_culture
+		}
+	}
+	allow = {
+		owns = location:kyiv
+	}
+	
+	name = UKR
+	flag = UKR
+	adjective = UKR_ADJ
+	tag = UKR
+	color = map_UKR
+	
+	regions = {
+		ruthenia_region
+	}
+	form_effect = {
+	}
+}
+
+TRY_REPLACE:CIR_f = { # Circassia
+	level = 1
+	required_locations_fraction = 0.50
+	rule = historical
+
+	potential = {
+		culture = culture:circassian_culture
+	}
+	allow = {
+		
+	}
+
+	name = CIR
+	flag = CIR	
+	adjective = CIR_ADJ
+	tag = CIR
+	color = map_CIR
+
+	areas = {
+		matrega_area
+	}
+
+	form_effect = {
+	}
+}

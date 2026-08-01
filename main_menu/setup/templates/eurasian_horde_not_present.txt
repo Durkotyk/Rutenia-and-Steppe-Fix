@@ -1,0 +1,72 @@
+﻿government = {
+	type = steppe_horde
+	heir_selection = tribal_oldest_male
+	
+	centralization_vs_decentralization = 60
+	traditionalist_vs_innovative = -80
+	spiritualist_vs_humanist = -50
+	aristocracy_vs_plutocracy = -40
+	serfdom_vs_free_subjects = -20
+	mercantilism_vs_free_trade = 50
+	belligerent_vs_conciliatory = -60
+	quality_vs_quantity = 50
+	offensive_vs_defensive = -70
+	land_vs_naval = -90
+	capital_economy_vs_traditional_economy = 100
+	individualism_vs_communalism = 60
+	outward_vs_inward = 40
+	mysticism_vs_jurisprudence = -30
+	
+	parliament = {
+		parliament_type = assembly
+	}
+
+	laws = {
+		tribal_legal_basis_law = yassa_decree_policy
+		tribal_organization_law = steppe_warbands_policy
+		cultural_traditions_law = martial_society
+		marriage_law = muslim_marriage
+		heir_religion_law = heir_same_religion
+		distribution_of_power_law = dop_favor_the_nobles
+		immigration_law = open_borders_law
+		mining_law = nobles_mining_law
+		coin_laws = gold_and_silver_coins
+	}
+	
+	reforms = {
+		legacy_of_genghis
+	}
+	
+	privilege = {
+				#Nobles				
+				nobility_council
+				primacy_of_nobility
+				
+				#Ulama
+				clergy_religious_state
+				clergy_literacy_rights				
+				religious_diplomats
+				
+				#Burghers
+				allow_trade_center_sponsorship
+				building_rights
+				urban_development_grants
+				
+				#Peasants
+				peasants_allowed_weapons_privilege
+				communal_lands
+				
+				#Dhimmi				
+				dhimmi_military_service
+				dhimmi_traditions
+				dhimmi_administrative_posts
+				dhimmi_in_administration
+				
+				#Tribes
+				tribes_tribal_levies
+				tribes_pasture_access
+				tribes_allow_gatherings
+				jaysh_armies
+	}
+}
+

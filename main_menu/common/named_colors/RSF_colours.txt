@@ -1,0 +1,34 @@
+﻿
+colors = {
+	# VANILLA
+	
+	map_SMO = rgb { 211 26 0 }
+	map_NSL = hsv360 { 323 67 54 }
+	
+	map_ruthenian = rgb { 50 150 200 }
+	map_cossack = rgb { 124 12 65 }
+	map_halychian = rgb { 123 50 0 }
+	map_rusyn = rgb { 0 220 220 }
+	map_cuman = rgb { 58 159 124 }
+
+	#Tartars / Hordes
+	map_AST = rgb { 26 27 154 } #same as in EU4
+	map_ATR = rgb { 26 27 154 }
+	
+	# ADDED BY KOTYK
+	map_karaite = rgb { 138 139 161 }
+	
+	map_KYI = rgb { 6 56 158 }
+	map_VOL = rgb { 244 15 36 }
+	map_UKR = rgb { 25 85 164 }
+	map_ZAZ = rgb { 125 12 65 }
+	map_POD = rgb { 237 176 7 }
+	map_PRS = rgb { 204 83 22 }
+	map_URS = rgb { 20 218 224 }
+	map_KSM = rgb { 231 119 31 }
+	map_KZN = rgb { 59 76 99 }
+	map_UZB = rgb { 101 184 251 }
+	map_SSO = rgb { 69 71 166 }
+	map_QQY = rgb { 230 119 31 }
+	map_ISC = rgb { 21 91 91 }
+}

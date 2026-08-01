@@ -1,0 +1,82 @@
+﻿# AI Romuva will not enforse religion – Kotyk / Jokser
+
+enforce_religion = {
+
+	type = subject
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+	}
+
+	allow = {
+	}
+
+	cooldown = { 
+		type = enforce_religion
+		years = 10
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			not = { religion = scope:actor.religion }
+		}
+        enabled = {
+			subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+			dependency_length_days = {
+				target = scope:actor
+				value >= MIN_DAYS_AS_SUBJECT_FOR_ENFORCEMENT
+			}
+			trigger_if = {
+				limit = {
+					modifier:blocked_from_conversion = yes
+					has_reform = government_reform:military_order_reform
+				}
+				overlord = { has_reform = government_reform:military_order_reform }
+			}
+			trigger_else = {
+				modifier:blocked_from_conversion = no
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:recipient }
+			enforce_religion_effect = {
+				actor = scope:actor
+				target = scope:recipient
+			}
+			scope:recipient = {
+				add_liberty_desire = liberty_desire_ultimate_plus
+			}
+		}
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				scope:actor = {
+					at_war = no
+					NOT = { religion = religion:romuva }   # Lithuanian tolerance
+				}
+			}
+			add = {
+				value = 10
+			}
+		}
+	}
+}

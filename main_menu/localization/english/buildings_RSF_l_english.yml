@@ -1,0 +1,11 @@
+﻿l_english:
+ kyiv_pech_lavra: "Kyiv-Pechersk Lavra"
+ kyiv_pech_lavra_desc: "Established in 1051 by the monks Anthony and Theodosius, the Kyiv Pechersk Lavra, or #italic Monastery of the Caves#!, is one of the oldest and most important centers of Eastern Orthodox Christianity. Built partly underground, its cave complexes served as both monastic dwellings and burial sites. Over time, it grew into a vast religious and cultural complex, with theological study and manuscript production. By the 14th century, the Lavra was a central part of Kievan Rus' spirituality and learning."
+ kyiv_pech_lavra_maintenance: "Lavra maintenance"
+
+ settlement_standard: "Settlement"
+ cossack_sloboda: "Sloboda"
+ #settlement_building: "[Custom('GetSettlement')]"
+
+ # seems to be missing from the error log
+ scientific_revolution_advance: "Scientific revolution advance"

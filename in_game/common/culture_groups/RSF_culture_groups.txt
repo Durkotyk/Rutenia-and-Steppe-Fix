@@ -1,0 +1,13 @@
+﻿# avoid naming the same as Cultures and Languages
+
+belarusian_group = {
+}
+
+ukrainian_group = {
+}
+
+zalessian_group = { # Russian cultures, but russian_group already exists for the East Slavic group
+}
+
+ruthene_group = {   # Ukrainian and Belarusian groups
+}

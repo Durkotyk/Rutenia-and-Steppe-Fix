@@ -1,0 +1,68 @@
+﻿namespace = collapsing_armies
+
+collapsing_armies.1 = { # Golden Horde Collapse
+	hide_portraits = yes
+	type = country_event
+	title = collapsing_armies.1.title
+	desc = collapsing_armies.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = GLH
+		from = 1385.1.1
+		to = 1537.1.1
+		monthly_chance = 25
+	}
+
+	illustration_tags = {
+        10 = exterior
+        10 = angry
+	}
+
+	trigger = {
+		is_ai = yes
+		at_war = no
+		
+		OR = {
+			AND = {
+				has_ruler = yes				
+				ruler ?= {
+					total_abilities <= 120
+				}
+			}
+			AND = {
+				stability <= 0
+				government_power <= 30
+			}
+			has_ruler = no
+			has_regent = yes
+			stability <= -20
+			government_power <= 10
+		}
+	}
+
+	option = { # Collapse
+		name = collapsing_armies.1.a
+		historical_option = yes
+		change_country_type = army
+		change_government_type = government_type:steppe_horde
+		every_unit = {
+			destroy_unit = yes
+		}
+		
+
+		ai_chance = {
+			base = 90
+		}
+	}
+
+	option = { # Don't Collapse
+		name = collapsing_armies.1.b
+
+		ai_chance = {
+			base = 10
+		}
+	}
+}

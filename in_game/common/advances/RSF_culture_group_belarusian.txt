@@ -1,0 +1,110 @@
+﻿############################
+# age_1_traditions
+############################
+ruthenian_law_tradition = {
+	age = age_1_traditions
+	icon = chacery_slavonic
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	legislative_efficiency = 0.1
+
+	requires = agriculture_advance
+}
+
+
+############################
+# age_2_renaissance
+############################
+hardened_cavalry = {
+	age = age_2_renaissance
+	icon = army_country_looting_advance
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	army_heavy_cavalry_power = 0.1
+	ai_weight = { add = 100 }
+	requires = unlock_heavy_cavalry_advance
+}
+
+polesian_lumber = {
+	age = age_2_renaissance
+	icon = lumber_improvements_discovery
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	global_lumber_output_modifier = 0.1
+	ai_weight = { add = 100 }
+	requires = power_projection_advance_2
+}
+
+
+############################
+# age_3_discovery
+############################
+skaryna_printing = {
+	age = age_3_discovery
+	icon = printing_press_advance
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	global_nobles_max_literacy = 5
+	global_clergy_max_literacy = 5
+	global_burghers_max_literacy = 5
+	ai_weight = { add = 100 }
+	requires = improved_book_binding
+}
+
+
+############################
+# age_4_reformation
+############################
+volok_reform = {
+	age = age_4_reformation
+	icon = debt_and_loans
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	tax_income_efficiency = small_tax_income_efficiency_bonus
+	ai_weight = { add = 100 }
+	requires = imperial_ambitions
+}
+
+############################
+# age_5_absolutism
+############################
+religious_dualism = {
+	age = age_5_absolutism
+	icon = a_tolerant_society
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	tolerance_heretic = 2
+	ai_weight = { add = 10 }
+	requires = increase_control_area_advance
+}
+
+############################
+# age_6_revolutions
+############################
+polesian_amber = {
+	age = age_6_revolutions
+	icon = milanese_tradition
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	global_amber_output_modifier = 0.1
+	ai_weight = { add = 10 }
+	requires = rgo_size_advance_revolutions
+}
+
+new_bread = {
+	age = age_6_revolutions
+	icon = potato_production
+	potential = {
+		culture = { has_culture_group = culture_group:belarusian_group }
+	}
+	global_potato_output_modifier = 0.2
+	ai_weight = { add = 10 }
+	requires = peasants_rights_laws_advance
+}

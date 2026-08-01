@@ -1,0 +1,378 @@
+﻿west_slavic_language = {
+	color = map_POL
+	family = slavic_language_family
+    
+	male_names = {
+		# Most common names fallback
+		name_andrew
+		name_casimir
+		name_george		
+		name_james name_john		
+		name_mark name_martin name_michael
+		name_nicholas		
+		name_stanislav
+		name_thomas
+		name_vladislav
+		name_wojciech		
+	}
+    
+	male_names = {
+		weight = {
+			value = 100
+		}
+		# More common names
+		name_adam name_albert name_andrew
+		name_casimir
+		name_frank name_frederick
+		name_george name_gregory
+		name_henry
+		name_james name_john name_joseph
+		name_lucas
+		name_mark name_martin name_michael
+		name_nicholas
+		name_paul name_peter
+		name_sigmund name_stanislav
+		name_thomas
+		name_vladislav
+		name_wojciech
+		name_zbygnev
+	}
+
+	male_names = {
+		weight = {
+			value = 30
+		}
+		# Less common names
+		name_alexander name_august
+		name_bartholomew name_bogdan name_bohuslav name_boleslav name_bronislav
+		name_charles name_christian name_christopher name_conrad
+		name_dobromir name_dominic
+		name_eugene
+		name_ferdinand
+		name_ignatius
+		name_laurence name_lech name_louis
+		name_matthias name_mieszko name_miroslav
+		name_premysl
+		name_radoslav name_raphael
+		name_simeon name_stephen
+		name_thaddeus
+		name_vincent
+		name_yaroslav
+
+		# Unique Polish Names
+		Dobieslaw Mieczyslaw Slawomir Witold
+	}
+    
+	female_names = {
+		# Most common names fallback
+		name_agnes name_anna 
+		name_barbara
+		name_catherine 
+		name_dorothy 
+		name_elizabeth name_eve
+		name_hedwig name_helen		 
+		name_margaret name_mary name_matilda 
+		name_sophia name_stanislava	
+	}
+
+	female_names = {
+		weight = {
+			value = 100
+		}
+		# More common names
+		name_agatha name_agnes name_anna 
+		name_barbara name_bogumila
+		name_catherine 
+		name_dorothy 
+		name_elizabeth name_eve
+		name_hedwig name_helen
+		name_judith 
+		name_madeleine name_margaret name_mary name_matilda 
+		name_sophia name_stanislava
+	}
+	female_names = {
+		weight = {
+			value = 30
+		}
+		# Less common names
+		name_beata name_bozena name_bogdana
+		name_christiana name_constance 
+		name_danuta name_dobroslava
+		name_eugenie
+		name_kunigunde
+		name_lucia
+		name_milena name_miroslava		
+		name_pelagia
+		name_salome name_silvia 
+		name_vaclava
+		name_yolande name_yaroslava
+        name_zenobia
+
+		# Unique Polish names
+		Aldona Michalina
+	}
+	
+	dynasty_names = {		
+		Bielinski Branicki Czarniecki Czartoryski Domanski Gosiewski Gostomski
+		Koniecpolski Krasicki Krasinski Kurnatowski Lanckoronski Leszczynski
+		Lubieniecki Lubomirski Mielzynski Oginski Opalinski Ossolinski Ostrogski
+		Poniatowski Poninski Potocki Pulaski Raczynski Rzewuski Sobieski
+		Taczanowski Tarnowski Teczynski Wisniowiecki Wodzicki Zamoyski Zolkiewski
+		
+		# Both genders
+		Chodkiewicz Mniszech Morsztyn ostrorog_dynasty Pac Radziwill Sapieha Sanguszko
+		Tarlo Tyszkiewicz
+	}
+	
+	lowborn = {
+		Adamczyk Bednarczyk Bielik Brodziec Brzozka Buczek Chmielak Cholewa Cieslak
+		Czajka Dudek Gorka Gruszka Klos Kolodziej Konopka Kowalczyk Kowalik Krawczyk
+		Lipowiec Lis_pl Marzec Mlynarczyk Nowak Pawlak Piekarczyk Podkowa Rybarczyk
+		Sikora Slowik Sosna Sroka Szczepanik Szewczyk Tyszka Walczak Wilk Wlodarczyk
+		Wojcik Wrona Zareba
+	}
+
+	location_suffix = "location_suffix_west_slavic"
+	require_genitive_location_names = yes
+
+	dialects = {
+		kashubian_dialect = {}
+		polabian_dialect = {}
+		polish_dialect = {}
+		silesian_dialect = {}
+	}
+}
+
+czechslovak_language = {
+	color = map_BOH
+	family = slavic_language_family
+    
+	male_names = {
+		# Most common names fallback
+		name_andrew
+		name_charles
+		name_francis
+		name_george		
+		name_james name_john name_joseph
+		name_lucas
+		name_mark name_martin name_michael		
+		name_paul name_peter	
+		name_thomas
+		name_vaclav name_vitus
+		name_waldemar name_wojciech
+		name_yaroslav		
+	}
+
+	male_names = {
+		weight = {
+			value = 100
+		}
+		# More common names
+		name_adam name_albert name_anthony name_andrew
+		name_charles
+		name_francis
+		name_george
+		name_henry
+		name_james name_john name_joseph
+		name_lucas
+		name_mark name_martin name_matthew name_michael
+		name_nicholas
+		name_paul name_peter
+		name_roman
+		name_thomas
+		name_vaclav name_vitus
+		name_waldemar name_wojciech
+		name_yaroslav
+
+	}
+	male_names = {
+		weight = {
+			value = 30
+		}
+		# Less common names
+		name_bogomil name_bohuslav 
+		name_cyril
+		name_david name_dragomir name_dragoslav
+		name_ignatius
+		name_jobst name_justus
+		name_lubomir
+		name_methodius name_miroslav name_moymar
+		name_prokop
+		name_radoslav name_radovan
+		name_simeon
+		name_vitazoslav name_vladislav name_vlastimil name_vratislav
+		name_wenceslas
+		name_yaromir
+
+		# Unique Czech and Slovak names	
+		name_zdenek
+	}
+    
+	female_names = {
+		# Most common names fallback
+		name_anna
+		name_bozena
+		name_catherine
+		name_elizabeth name_eve
+		name_helen
+		name_jarmila name_joanna
+		name_lucia
+		name_margaret name_martina
+		name_paula
+		name_yaroslava
+	}
+
+	female_names = {
+		weight = {
+			value = 100
+		}
+		# More common names
+		name_anna
+		name_bozena
+		name_catherine name_claire		
+		name_elizabeth name_eve
+		name_helen
+		name_jarmila name_joanna name_judith
+		name_lucia
+		name_margaret name_martina
+		name_paula
+		name_stanislava
+		name_yaroslava
+	}
+
+	female_names = {
+		weight = {
+			value = 30
+		}
+		# Less common names		
+		name_beata
+		name_dobroslava		
+		name_ludmila
+		name_martha name_monica
+		name_petra
+		name_veronica
+		name_yvonne
+
+		# Unique Czech and Slovak names
+		Vladimira Romana
+	}
+
+	dynasty_names = {
+		# Czech fallback
+		# Adjectives
+		Bezdruzicky Bitovsky Boskovicky Dacicky Dubansky Dubsky Holicky Hradecky
+		Janovsky Jesensky Kamenicky Kinsky Klenovsky Kobylsky Kralicky Krumlovsky
+		Lazansky Libstejnsky Lhotsky Lichnovsky Mitrovsky Moravsky Nepomucky Opavsky
+		Plansky Podebradsky Radecky Skalicky Spanovsky Svihovsky Tovacovsky	
+		
+		# Nouns 1 no conjuccation
+		Cernin Hrabisic Kaplir Kolovrat Krajir Lobkowicz Petras Zampach Zejdlic
+
+		# Nouns 2 with conjugation
+		Borita Kostka Mladota Prazma Slavata
+		
+		# From somewhere 
+		Chotek Cimburk Duba Harrach Kunstat Landstejn Lichtenburk Lichtenstejn Lemberk
+		Lipa Martinic Nostic Pernstejn Pirkstejn Podebrady Ronov Rozmberk Sternberk Valdstejn
+		Zerotin
+
+		# Vanilla
+		dynasty_lobkowicz dynasty_kinsky dynasty_kolowrat dynasty_nostic
+		dynasty_csaky dynasty_rakoczi dynasty_apponyi dynasty_forgach
+	}
+
+	lowborn = {	
+		# Czech	fallback
+		# Adjectives
+		Cerny Holy Hrdy Konecny Kopecky Maly Novotny Pokorny Stastny Studeny Tichy Vesely
+		Horsky Medvecky Surovy Vysoky Zeleny
+
+		# Nouns 1 no conjuccation
+		Krejci Pavlu
+		Balaz Bartak Bartos Bednar Benes Beran Bures Chytil Dohnal Dolezal Dostal
+		Dvorak Fojtik Hladik Horak Kadlec Kolar Kovar Kralik Kriz Kratochvil Mlynar
+		Navratil Necas Nespor Novak Pilar Pospisil Reznik Sedlak Sevcik Soukup Svec
+		Tesar Toman Urban Vykoukal Zapletal		
+
+		# Nouns 2 with conjugation
+		Fiala Hruska Kucera Prochazka Riha Ruzicka Smetana Sterba Sykora Vejvoda Vrana
+		Vrba Zelenka
+	}
+
+	dialects = {
+		czech_dialect = {
+			dynasty_names = {
+				# Adjectives
+				Bezdruzicky Bitovsky Boskovicky Dacicky Dubansky Dubsky Holicky Hradecky
+				Janovsky Jesensky Kamenicky Kinsky Klenovsky Kobylsky Kralicky Krumlovsky
+				Lazansky Libstejnsky Lhotsky Lichnovsky Mitrovsky Moravsky Nepomucky Opavsky
+				Plansky Podebradsky Radecky Skalicky Spanovsky Svihovsky Tovacovsky	
+		
+				# Nouns 1 no conjuccation
+				Cernin Hrabisic Kaplir Kolovrat Krajir Lobkowicz Petras Zampach Zejdlic
+
+				# Nouns 2 with conjugation
+				Borita Kostka Mladota Prazma Slavata
+		
+				# From somewhere
+				Chotek Cimburk Duba Harrach Kunstat Landstejn Lichtenburk Lichtenstejn Lemberk
+				Lipa Martinic Nostic Pernstejn Pirkstejn Podebrady Ronov Rozmberk Sternberk Valdstejn
+				Zerotin
+			}
+
+			lowborn = {	
+				# Adjectives
+				Cerny Holy Hrdy Konecny Kopecky Maly Novotny Pokorny Stastny Studeny Tichy
+				Vesely
+
+				# Nouns 1 no conjuccation
+				Krejci Pavlu
+				Balaz Bartak Bartos Bednar Benes Beran Bures Chytil Dohnal Dolezal Dostal
+				Dvorak Fojtik Hladik Horak Kadlec Kolar Kovar Kralik Kriz Kratochvil Mlynar
+				Navratil Necas Nespor Novak Pilar Pospisil Reznik Sedlak Sevcik Soukup Svec
+				Tesar Toman Urban Vykoukal Zapletal
+
+				# Nouns 2 with conjugation
+				Fiala Hruska Kucera Prochazka Riha Ruzicka Smetana Sterba Sykora Vejvoda Vrana
+				Vrba Zelenka
+			}
+		}
+
+		slovak_dialect = {
+			dynasty_names = {
+				# Adjectives
+				Belansky Belopotocky Benicky Brezovicky Bulovsky Cermansky Diviacky Filicky
+				Frivaldsky Hrusovsky Jesensky Klobusicky Kvaciansky Lomnicky Mednansky Ostrolucky
+				Podmanicky Podturnansky Prilesky Pruzinsky Radvansky Rakovsky Scitovsky Slopniansky
+				Smreciansky Szalavsky Svatojansky Trenciansky Trstensky Zaborsky Zapolsky Zaturecky
+
+				# Nouns 1 no conjuccation
+				Batan Bebek Bernolak Bockaj Bohus Bosniak Cak Caplovic Hadik Hamuljak Pongrac
+				Turzo Zmeskal
+
+				# Nouns 2 with conjugation
+				Balasa Ivanka Jedlicka
+			}
+
+			lowborn = {	
+				# Adjectives
+				Drobny Horsky Hrdy Konecny Kopecky Maly Medvecky Novotny Pokorny Stastny
+				Studeny Surovy Tichy Vesely Vysoky Zeleny
+
+				# Nouns 1 no conjuccation
+				Balaz Bartos Bednar_sk Bednarik_sk Cesnak Debnar Gajdos Galcik Havran Horak
+				Hrnciar Husak_sk Ilcik Javor Jurik Kacmar Kamenik Kocian Kocur Kolar_sk Kolarik
+				Kollar Kovac Kovacik Krajcir Kralik Liptak Minarik Molnar Mraz Novak Pekar
+				Pekarik Petras Rybar_sk Sevcik Slovak Stefanik Svec Tesar_sk Turcan Urban Vozar
+
+				# Nouns 2 with conjugation
+				Baca Cibula Dubravka Duda Fiala Hruska Kapusta_sk Kucera Liska Lobotka Sekera
+				Siska Skoda Slanina Straka Sykora Talaba Varga	Vrana Vrba
+			}
+		}
+	
+		sorbian_dialect = {}
+	}
+	
+	location_prefix = "location_prefix_czech"
+}

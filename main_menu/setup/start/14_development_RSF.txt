@@ -1,0 +1,103 @@
+development = {
+	# Changed by Kotyk
+	# Regions, added to the vanilla values
+	caucasus_region = -1
+	steppes_region = 1
+	russian_region = -2
+	ruthenia_region = -2
+	ural_region = 1
+
+	# Areas, added to the vanilla values
+	slovakia_area = -3
+	transylvania_area = -5
+	tambov_area = 1
+	ryazan_area = -2
+
+	# Locations set to 0
+	sarai_al_jadid = -5
+	astrakhan = -10
+	
+	
+	# Added by Kotyk
+	# Baltic areas
+	lithuania_area = -2
+	prussia_area = -1
+	baltic_area = -1
+	samogitia_area = -3
+	
+	#Russia areas
+	oka_area = -4
+	kursk_area = -3
+	nizhny_novgorod_area = -5
+	
+	#Ruthenia areas
+	left_bank_ukraine_area = -7
+	sloboda_ukraine_area = -2
+	podolia_area = -9
+	severia_area = -4
+	polesia_area = 3
+	black_ruthenia_area = 3
+	
+	#Horde areas
+	chervleny_yar_area = -4
+	mordva_area = -9
+	bolghar_area = -5
+	desht_kipchak_area = -4
+	crimea_area = 5
+
+	#Ruthenian provinces
+	cherkasy_province = -7
+	porossia_province = -4
+	zhytomyr_province = -2
+	torgovytsia_province = -2
+	zviahel_province = -2
+	sumy_province = 5
+	donetsk_province = 3
+	mazyr_province = -4
+	rechytsa_province = -4
+	western_podolia_province = 5
+	eastern_podolia_province = 3
+	
+	# Russian provinces
+	novosil_province = -2
+	pronsk_province = -2
+	ryazan_province = -1
+
+	#Horde provinces
+	astrakhan_province = 10
+	zamyany_province = 5
+	bolkhuny_province = 5
+	beljamen_province = 6
+	pologoye_zaymishche_province = 11
+	beljamen_province = 3
+	kazan_province = 3
+	cafa_province = 4
+	gothia_province = 8
+	tula_province = -12
+	yelets_province = -7
+	kasimov_province = -3
+
+	# Balkans
+	rhodopes_province = -5
+
+	# Locations
+	wroclaw = 6
+	plock = 5
+	ukek = 10
+	majar = 13
+	azok = 3
+	tana = 10
+	solkhat = 2
+	qirq_yer = 4
+	soldaia = 4
+	seyitler = -5
+	rechnoye = 10
+	sarayjuk = 15
+	kazan = 4
+	kurkino = -4
+	stanimaka = 7
+	kyiv = -4
+	chernihiv = -3
+	lutava = 5
+	oster = 5
+}

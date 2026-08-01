@@ -1,0 +1,415 @@
+# Kazan Kasimov Uzbek QirqYer Isaccea Podolia Pereiaslav Kursk Sobay Malkar Karvuna
+current_age = age_1_traditions
+
+countries = {
+	countries = {
+
+	KZN = { # Kazan
+		type = location
+		our_cores_conquered_by_others = {
+
+			# Kazan and Vyatka
+			kazan laish calli mamadysh bogatye_saby oli_baraza dobyaz yaransk kiknur yoshkar_ola kutarka sernur kabachischi morki urzhum
+			sarapul mozhga yelabuga izhevsk vavozh_mozhga vyatskiye_polyany kilmez stelty falenki uni ural_nema
+			vyatka ust_cheptsa suna nikolsky verkhoshizhemye
+
+			# Bolghar
+			bolghar cukataw bilyar almetyevsk zainsk sergiyevsk koshki kamyshla bolshoy_cheremshan staryi_amanak
+			bavly bugulma buguruslan abdulino aznakayevo syun verkhneyarkeyevo menzelinsk lower_aktanyshbash chalninsky_pochinok chekmagush
+
+			# Bashkiria
+			sorochinskaya buzuluk grachevka bol_shoy_uran malyy_uran sadak s_ezzaja bogatoye meleuz tabynsky ishimbay beloretsk kapova_pesera 
+			chishmy ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo sterlitamak
+			krasnaya_gorka belekes bolshoy_ik ust_katav mesyagutovo zlatoust			
+
+			# Desht-i-Kipchak, Chimgi Tura and Perm
+			ufa askino baltas burayevo yaik chebarkul uyskoye miass
+
+			# Nizhny Novgorod and Samara
+			uren tonshayevo vetluga semyonov kovernino krasnye_baki sharanga varnavino
+			samara shigony morkvash khvorostyanka stavropol_na_volge kondurcha pestravka poganovka 
+			alatyr bolshoye_murashkino perevoz sechenovo sergach spasskoye_lyskovo kurmysh khakhaly lyskovo raznezhye voskresenskoye
+			cheboksary kozmodemyansk alikovo vasilsursk tsivilsk atishchevo sviyazhsk
+			simbirsk pokrovskoye cherdakly melekess staraya_mayna tetyushi atrat batyrevo altyshevo
+			troitskoye_kuroedovo bazarny_syzgan staraya_kulatka solovtsovo karsun promsa chamzinka saransk
+
+			# Ryazan and Tambov
+			sarov bolshoye_boldino temnikov krasnoslobodsk lukoyanov shatki arzamas pavlovo ruzayevka
+			mokhcha nizhny_lomov insar tarbeevka zubova_polyana
+			penza gorodishche mokshan lunino nikolskoye shemysheyka russky_kameshkir
+			sosnovy_ostrov malykovka novye_burasy 
+
+			# Lower Yik
+			mechetnaya perelyub ivanteyevka balakovo dukhovnitskoye
+		}
+		
+		capital = kazan
+		
+		starting_technology_level = 3
+		include = "expl_mongols"
+		include = "eurasian_horde_not_present"
+		country_rank = rank_kingdom
+		religious_school = hanafi_school
+		government = { 
+			mysticism_vs_jurisprudence = -25
+
+			reforms = {				
+				nomadic_societies_reform
+			}
+
+			laws = {
+				legal_code_law = sharia_law_policy
+				sharia_law = hanafi_policy
+				marriage_law = muslim_marriage
+				heir_religion_law = heir_same_religion
+			}
+		}
+
+		accepted_cultures = {
+			bolghar_culture
+			chuvash_culture
+			bashkir
+			mishar
+		}
+
+		tolerated_cultures = {
+			mari_culture
+			erzya_culture
+			chiyalik_culture			
+			meschera_culture
+		}
+		
+		currency_data = {
+			gold = 410
+		}
+	}
+
+	KSM = { # Kasimov
+		type = location
+		our_cores_conquered_by_others = {
+			kasimov ardatov azeevo kadom sasovo
+		}
+		
+		capital = kasimov
+		
+		starting_technology_level = 3
+		include = "expl_mongols"
+		include = "eurasian_horde_not_present"
+		country_rank = rank_duchy
+		religious_school = hanafi_school
+		government = { 
+			mysticism_vs_jurisprudence = -55 
+			laws = {
+				legal_code_law = sharia_law_policy
+				sharia_law = hanafi_policy
+				marriage_law = muslim_marriage
+				heir_religion_law = heir_same_religion
+			}
+		}
+
+		accepted_cultures = {			
+			meschera_culture
+		}
+		
+		currency_data = {
+			gold = 200
+		}
+	}
+
+	UZB = { # Uzbek
+		type = location
+		our_cores_conquered_by_others = {
+
+			# Chimgi Tura
+			chimgi_tura tugulym yalutorovsk tsaryovo_gorodishche shadrinsk stepnoye almenevo safkul shchuchye kargapolye kurtamysh
+			yetkul chebarkul troitsk uyskoye miass
+
+			# Desht-i-Kipchak
+			irgiz chet_irgiz karasay kayrakty sazanbay sarykopa karasu saryozen ulkayak aybas kabyrga karaturgay turgay zhaldama
+			orda_bazar alashakhan baskamyr ulytau tengiz kon_tengiz kulanotpes sonaly zhuban_ana kaip_ata karagau korgan maulimberdy
+			tagatay dandybay karabay smai_samkai yegindybulak bakanas ashchyozek dagandely koksala sayak tokrau espe kusak zhamankul
+			zhamshy kashkanteniz kyzylsay moiynty mukur bolgan_ana aitbulat belen_ana talmas_ata
+
+			# Kulykol
+			kulykol zhetykol shoptikol siberia_tenteksor konildi zharkol sasykkol kartaly alakol arykbalyk kak kokshetau shoindykol atbasar
+
+			# Transoxiana and Zhetysu
+			yangikent buzikkala jubara karmakshi sighnaq asanas barchkend jand kamyskala
+			sozak aksumbe gulshara kyzylkorgan ran tasty
+			
+			# Omsk
+			omsk kamyshnoye cherlak tyukalinsk okoneshnikovo kolosovka gorkovskoye bayanaul shybyndy bozok_astana akkol siletiteniz zhalauly
+			chastoozerye polovinnoye armizonskoye berdyuzhye korkina_sloboda tarankol kyzylzhar presnowka staroye stanitsa_kokchetavskaya
+			sartlan taskayevo kargat kainsky_pas kyshtovka
+
+			# Bursol
+			sarybulak zhanaarka arkat kaynar_atbai takhir karasor tuzdysor karkaraly balyktykol imakia zhelezin lebyazhye
+			
+			# Qashlik and Surgut
+			qashliq siberia_abalak turtas yukonda tobolsk vagay tavdinsky_sloboda yurginskoye vikulovo
+			surgut bolshoy_balyk irtysh megion bolshoy_yugan upper_ob kargasok vasyugan kolpashevo tara znamenskoye ust_ishim shish muromtsevo
+		}
+		
+		capital = chimgi_tura
+		
+		starting_technology_level = 3
+		include = "expl_mongols"
+		include = "eurasian_horde_not_present"
+		country_rank = rank_kingdom
+		religious_school = hanafi_school
+		government = { 
+			mysticism_vs_jurisprudence = -65
+
+			reforms = {				
+				nomadic_societies_reform
+			}
+
+			laws = {
+				legal_code_law = sharia_law_policy
+				sharia_law = hanafi_policy
+				marriage_law = muslim_marriage
+				heir_religion_law = heir_same_religion
+			}
+		}
+
+		accepted_cultures = {			
+			yerle_qaliq_culture
+			chelkans_culture
+		}
+		
+		tolerated_cultures = {
+			selkup_culture
+		}
+		
+		currency_data = {
+			gold = 450
+		}
+	}
+
+	QQY = {	# Qirq Yer
+		own_control_core = {
+			qirq_yer
+		}
+
+		starting_technology_level = 3
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture			
+			ruler = random
+		}
+		
+		country_rank = rank_duchy
+		capital = qirq_yer
+		
+		liturgical_language = greek_language
+
+		accepted_cultures = {
+			armenian_culture
+		}
+		
+		tolerated_cultures = {			
+			karaite_culture			
+			pontic_greek_culture
+			crimean
+		}
+
+		include = "expl_western_europe"
+		include = "eastern_european_monarchy"
+	}
+
+# Dobruja and the Balkans
+
+	ISC = {	#Isaccea
+		own_control_core = {
+			isaccea tulcea
+		}
+		
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eurasian_muslim_tribe"
+		religious_school = hanafi_school
+		
+		government = {
+			ruler = random
+		}
+
+		accepted_cultures = {
+		}
+		
+		tolerated_cultures = {			
+			wallachian
+		}
+		
+		capital = isaccea
+	}
+
+	# SMC = { #Strumica - Hrelja's domain
+ 	# 	own_control_core = {
+	# 		kocani strumica shtip krupnik
+	# 	}
+
+	# 	include = "expl_mediterranean"
+	# 	include = "eastern_european_monarchy"
+	# 	country_rank = rank_county
+
+	# 	government = {
+	# 		type = monarchy
+	# 		heir_selection = cognatic_primogeniture
+
+	# 		ruler = ser_hrelja
+	# 	}
+
+	# 	tolerated_cultures = {
+	# 		serbian
+	# 	}
+
+		
+	# 	liturgical_language = church_slavonic_language
+
+	# 	capital = strumica
+	# 	dynasty = ohmucevic_dynasty
+	# }
+
+# Principalities
+	
+	POD = { # Podolia
+		our_cores_conquered_by_others = {
+			bratslav balta bershad drahushiv karabul savran torhovytsia teplyk tsybuliv uman zavallia vinnytsia buzhskyi pohrebyshche sokilets
+		}
+		
+		country_rank = rank_county
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+		}
+
+		liturgical_language = church_slavonic_language
+
+		accepted_cultures = {			
+			halychian_culture
+			ruthenian
+		}
+
+		capital = bratslav
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "ruthenian_principality_no_coast_not_present"
+		
+		currency_data = {
+			gold = 250
+		}
+	}
+
+	
+	PRS = { # Pereiaslav
+		our_cores_conquered_by_others = {
+			pereiaslav boryspil kozelets yaroslavka poltava kremenchuk myrhorod velyki_sorochyntsi hovtva opishnya
+			lubny pyriatyn horodyshche horoshino zolotonosha yahotyn hadiach romen pryluky chornukhy lypova_dolyna
+			donets_kharkiv khotmyzh kotelva okhtyrka krasnopillia
+			kolomak
+		}
+		
+		country_rank = rank_county
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+		}
+
+		liturgical_language = church_slavonic_language
+
+		accepted_cultures = {			
+			severian
+			cossack_culture
+		}
+
+		capital = pereiaslav
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "ruthenian_principality_no_coast_not_present"
+		
+		currency_data = {
+			gold = 250
+		}
+	}
+
+	
+	URS = { # Kursk
+		our_cores_conquered_by_others = {
+			kursk fatezh opalkova kosozhichi manturovo_kursk olgov oskol troitskoye_na_shchigrakh
+			belgorod korocha oboyan muzhech rakitnoye sudzha
+		}
+		
+		country_rank = rank_county
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+		}
+
+		liturgical_language = church_slavonic_language
+
+		capital = kursk
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "ruthenian_principality_no_coast_not_present"
+		
+		currency_data = {
+			gold = 250
+		}
+	}
+
+# Caucasus
+
+	SSO = { #Sobay
+		own_control_core = {
+			siba_circassia khadyzhi
+		}
+
+		starting_technology_level = 3
+		include = "expl_christian_caucasus"
+		include = "eurasian_orthodox_tribe"
+		
+		government = {
+			ruler = random
+		}
+
+		accepted_cultures = {
+		}
+
+		capital = siba_circassia
+	}
+
+	MLR = { #Malkar
+		own_control_core = {
+			arkhyz khumar mamiya_kala rim_gora chegem
+		}
+
+		our_cores_conquered_by_others = {
+			yessentuq
+		}
+
+		include = "expl_middle_east"
+		starting_technology_level = 3
+		include = "eurasian_orthodox_tribe"
+		government = {
+			type = tribe
+			heir_selection = tribal_oldest_male
+			ruler = random
+		}
+
+		accepted_cultures = {
+			balkar_culture
+		}
+
+		tolerated_cultures = {
+			alan_culture
+		}
+
+		capital = arkhyz
+	}	
+	
+	}
+}

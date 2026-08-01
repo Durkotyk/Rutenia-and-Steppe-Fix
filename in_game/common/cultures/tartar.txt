@@ -1,0 +1,502 @@
+﻿crimean = { #https://en.wikipedia.org/wiki/Crimean_Tatars
+	language = western_kipchak_dialect	
+	color = map_CRI	
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		cuman_culture = kindred
+		uzbek_culture = positive
+		kazani = positive
+		bolghar_culture = positive
+		nogai = positive
+		mishar = positive
+		astrakhani = positive
+		karaite_culture = positive
+		severian = enemy
+		ruthenian = enemy
+		halychian_culture = enemy
+		volhynian_culture = negative
+		polesian_culture = negative
+		cossack_culture = enemy
+		ryazanian = enemy
+		muscovite = negative
+		verkhovian = enemy
+		mongolian_culture = kindred
+	}
+	culture_groups = {
+		tatar_group
+		turkic_group
+		steppe_group
+	}
+
+	use_patronym = yes
+}
+
+cuman_culture = { #https://en.wikipedia.org/wiki/Cumans
+	language = western_kipchak_dialect	
+	color = map_cuman
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		crimean = kindred
+		aukstaitian = positive	
+	}
+	
+	culture_groups = {
+		carpathian_group
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+kazani = {
+	language = eastern_kipchak_dialect	
+	color = map_KAZ
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		bolghar_culture = kindred
+		crimean = positive
+		mishar = positive
+		nogai = positive
+		bashkir = positive
+		severian = negative
+		ruthenian = negative
+		halychian_culture = negative
+		volhynian_culture = negative
+		polesian_culture = negative
+		cossack_culture = negative
+		ryazanian = negative
+		muscovite = negative
+		mongolian_culture = kindred
+	}
+	
+	culture_groups = {
+		tatar_group
+		turkic_group
+		steppe_group
+	}
+
+	use_patronym = yes
+}
+
+astrakhani = {
+	language = western_kipchak_dialect	
+	color = map_AST	
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		mongolian_culture = kindred
+		mishar = kindred
+		crimean = positive
+		nogai = positive
+		uzbek_culture = positive
+		kumyk_culture = positive
+		severian = negative
+		ruthenian = negative
+		halychian_culture = negative
+		volhynian_culture = negative
+		polesian_culture = negative
+		cossack_culture = negative
+		ryazanian = negative
+		muscovite = negative
+	}
+	
+	culture_groups = {
+		tatar_group
+		turkic_group
+		steppe_group
+	}
+
+	use_patronym = yes
+}
+
+bashkir = {
+	language = eastern_kipchak_dialect	
+	color = map_BSH	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+
+	opinions = {
+		uzbek_culture = positive
+		bolghar_culture = positive
+		kazani = positive
+		mishar = positive
+	}
+	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+mishar = {
+	language = eastern_kipchak_dialect	
+	color = map_GOL		
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		mongolian_culture = kindred
+		astrakhani = kindred
+		crimean = positive
+		kazani = positive
+		nogai = positive
+		bolghar_culture = positive
+		uzbek_culture = positive
+		yerle_qaliq_culture = positive
+		bashkir = positive
+		turkmen_culture = positive
+		chuvash_culture = positive
+		severian = negative
+		ruthenian = negative
+		halychian_culture = negative
+		volhynian_culture = negative
+		polesian_culture = negative
+		cossack_culture = enemy
+		ryazanian = enemy
+		muscovite = enemy
+		verkhovian = enemy
+	}
+	culture_groups = {
+		tatar_group
+		turkic_group
+		steppe_group
+	}
+
+	use_patronym = yes
+}
+
+nogai = {
+	language = eastern_kipchak_dialect	
+	color = map_NOG	
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		crimean = positive
+		mongolian_culture = kindred
+		turkmen_culture = kindred
+		khorezmian_culture = positive
+		uzbek_culture = positive
+		kazani = positive
+		bolghar_culture = positive
+		mishar = positive
+		astrakhani = positive
+	}
+	
+	culture_groups = {
+		tatar_group
+		turkic_group
+		steppe_group
+	}
+
+	use_patronym = yes
+}
+
+kumyk_culture = {
+	language = western_kipchak_dialect
+	
+	color = map_kumyk
+	
+	tags = { central_asian_gfx middle_east_gfx }
+	
+	opinions = {
+		astrakhani = positive
+	}	
+	culture_groups = {
+		tatar_group
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+karachay_culture = {
+	language = western_kipchak_dialect
+	
+	color = map_karachay
+	
+	tags = { central_asian_gfx middle_east_gfx }
+	
+	opinions = {
+		balkar_culture = kindred
+		circassian_culture = positive
+	}	
+	culture_groups = {
+		tatar_group
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+balkar_culture = {
+	language = western_kipchak_dialect
+	
+	color = map_balkar
+	
+	tags = { central_asian_gfx middle_east_gfx }
+	
+	opinions = {
+		circassian_culture = kindred
+		karachay_culture = kindred
+	}	
+	culture_groups = {
+		tatar_group
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+chuvash_culture = {
+	language = oghuric_language
+	
+	color = map_chuvash
+	
+	tags = { central_asian_gfx middle_east_gfx }
+	
+	opinions = {
+		bolghar_culture = kindred
+		kazani = kindred
+		mongolian_culture = kindred
+		mishar = positive
+	}
+	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+bolghar_culture = {
+	language = oghuric_language
+	
+	color = map_bolghar
+	
+	tags = { central_asian_gfx middle_east_gfx }
+	
+	opinions = {
+		chuvash_culture = kindred
+		kazani = kindred
+		mishar = positive
+		bashkir = positive
+		mongolian_culture = kindred
+		severian = negative
+		ruthenian = negative
+		halychian_culture = negative
+		volhynian_culture = negative
+		polesian_culture = negative
+		cossack_culture = negative
+		ryazanian = negative
+		muscovite = negative
+	}
+	
+	culture_groups = {
+		tatar_group
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+sakha_culture = {	#Yakuts
+	language = turkic_language
+
+	color = map_sakha
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+soyot_culture = {
+	language = turkic_language
+
+	color = map_soyot
+	
+	tags = { central_asian_gfx middle_east_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+khakas_culture = {	#Includes Yenisei Kyrgyz
+	language = turkic_language
+
+	color = map_khakas
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+telengit_culture = {
+	language = eastern_kipchak_dialect
+
+	color = map_telengit
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+teleut_culture = {
+	language = eastern_kipchak_dialect
+
+	color = map_teleut
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+chelkans_culture = {
+	language = turkic_language
+
+	color = map_chelkans
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+		uzbek_culture = positive
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+kumandin_culture = {
+	language = turkic_language
+
+	color = map_kumandin
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+tubalar_culture = {
+	language = turkic_language
+
+	color = map_tubalar
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+shor_culture = {
+	language = turkic_language
+
+	color = map_shor
+	
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+	
+	opinions = {
+
+	}	
+	culture_groups = {
+		turkic_group
+	}
+
+	use_patronym = yes
+
+}
+
+yerle_qaliq_culture = {	#https://en.wikipedia.org/wiki/Siberian_Tatars
+	language = eastern_kipchak_dialect
+
+	color = map_SIB
+
+	tags = { central_asian_gfx middle_east_gfx altai_coa_gfx }
+
+	opinions = {
+		astrakhani = positive
+		mishar = positive
+	}
+	
+	culture_groups = {
+		tatar_group
+		turkic_group
+	}
+
+	use_patronym = yes
+}
+
+karaite_culture = {	#https://en.wikipedia.org/wiki/Crimean_Karaites
+	language = western_kipchak_dialect
+
+	color = map_karaite
+
+	tags = { central_asian_gfx middle_east_gfx }
+
+	opinions = {
+		crimean = positive
+	}
+	
+	culture_groups = {
+		tatar_group
+		turkic_group
+	}
+
+	use_patronym = yes
+}

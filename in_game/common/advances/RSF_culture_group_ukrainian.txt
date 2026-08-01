@@ -1,0 +1,107 @@
+﻿############################
+# age_1_traditions
+############################
+tamed_steppes = {
+	age = age_1_traditions
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	global_monthly_food_modifier = 0.05
+
+	requires = agriculture_advance
+}
+
+
+############################
+# age_2_renaissance
+############################
+east_and_west = {
+	age = age_2_renaissance
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	global_merchant_power = 0.1
+	ai_weight = { add = 100 }
+	requires = power_projection_advance_2
+}
+
+
+############################
+# age_3_discovery
+############################
+steppe_frontier = {
+	age = age_3_discovery
+	icon = cossack_raids
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	global_defensive = 0.05
+	ai_weight = { add = 100 }
+	requires = fort_limit_3_advance
+}
+
+chumak_trading = {
+	age = age_3_discovery
+	icon = exploit_the_alpine_trade
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	global_merchant_capacity_modifier = 0.10
+	ai_weight = { add = 100 }
+	requires = paved_road_advance
+}
+
+
+############################
+# age_4_reformation
+############################
+religious_brotherhoods = {
+	age = age_4_reformation
+	icon = byz_heart_of_orthodoxy_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	monthly_religious_influence = 0.05
+	cultural_tradition_modifier = 0.2
+	ai_weight = { add = 100 }
+	requires = clergy_rights_laws_advance
+}
+
+gunpowder_boom = {
+	age = age_4_reformation
+	icon = artillery_institution_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	global_saltpeter_output_modifier = 0.1
+	ai_weight = { add = 10 }
+	requires = guns_workshop_advance
+}
+
+############################
+# age_5_absolutism
+############################
+fiery_army = {
+	age = age_5_absolutism
+	icon = pike_and_shot_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	siege_ability = 0.1
+	ai_weight = { add = 100 }
+	requires = artillery_vs_fort_age_5_absolutism
+}
+
+############################
+# age_6_revolutions
+############################
+orlyk_constitution = {
+	age = age_6_revolutions
+	icon = the_constitution
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction
+	ai_weight = { add = 100 }
+	requires = separation_of_powers
+}

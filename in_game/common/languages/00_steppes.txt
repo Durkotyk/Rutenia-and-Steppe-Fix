@@ -1,0 +1,180 @@
+﻿
+kipchak_language = { #https://en.wikipedia.org/wiki/Kipchak_languages
+#Represents a language group: Contains Kazakh, Kyrgyz and Tatar
+
+family = turkic_language_family
+color = color_language_kipchak
+
+patronym_suffix = "patronym_suffix_kipchak"
+patronym_suffix_son = "patronym_suffix_kipchak_son"
+patronym_suffix_daughter = "patronym_suffix_kipchak_daughter"
+
+location_suffix = "location_suffix_kipchak"
+
+character_name_order = "CHARACTER_NAME_ORDER_KIPCHAK"
+
+male_names = {
+	Adil Aibek Alikhan Almaz Amir Amirkhan Anvar Aslan Ayrat Azamat Azat Aziz
+	Baqtiyar Bakyt Bekjan Bekzat Bilal Bolat
+	Chingiz
+	Ermek
+	Farit
+	Hamza Hasan
+	Ibrahim Ilnur Ilshat Ilyas
+	Mambet Marat Mirbek Muhtar Musa
+	Nail Nurbek Nurlan Nurzat
+	Oljas Omar
+	Ramil Rashit Rostam
+	Salamat Samat Serik Suleimen
+	Talgat Temir
+	Ulan Umar
+	Zamir
+}	
+female_names = {
+	Aidana Aigul Aima Aisha Aiza Alfiya Aliya Amina Anargul Asel Aygerim Ayna
+	Baljan Bibigul
+	Dilnaz
+	Farida Fatima
+	Golshat Guldana Gulnara Gulnaz Gulzat Guzal
+	Janar Jazira Juldyz
+	Madina Mirgul
+	Nazgul Nazira
+	Safiya Saliha Saltanat Saule
+	Zifa Zuhra Zulfiya
+}
+
+dynasty_names = {
+	Alban Arabshah Argyn Ashtarhan Atygai
+	Chelubey
+	Dulat
+	Janibek
+	Kerei Kuchum
+	Manggyt Mansur
+	Naiman Nogaybek
+	Qanly Qarluq Qoja Qonyrat Qypshaq
+	Shaibani Shiban Sunaq Suindik
+	Tabyn Tobyqty Tore Tuqay_Timur
+	Uisin Urys
+}
+lowborn = {
+}
+
+dialects = {	
+	eastern_kipchak_dialect = { # Kazani, Mishar, Nogai, Kyrgyz, Uzbek
+		male_names = {
+			Adil Aibek Alikhan Almaz Amir Amirkhan Anvar
+			Aslan Ayrat Azamat Azat Aziz
+			Baqtiyar Bakyt Bekjan Bekzat Bilal Bolat
+			Chingiz
+			Ermek
+			Farit
+			Hamza Hasan
+			Ibrahim Ilnur Ilshat Ilyas
+			Mambet Marat Mirbek Muhtar Musa
+			Nail Nurbek Nurlan Nurzat
+			Oljas Omar
+			Ramil Rashit Rostam
+			Salamat Samat Serik Suleimen
+			Talgat Temir
+			Ulan Umar
+			Zamir
+		}
+
+		female_names = {
+			Aidana Aigul Aima Aisha Aiza Alfiya
+			Aliya Amina Anargul Asel Aygerim Ayna
+			Baljan Bibigul
+			Dilnaz
+			Farida Fatima
+			Golshat Guldana Gulnara Gulnaz Gulzat Guzal
+			Janar Jazira Juldyz
+			Madina Mirgul
+			Nazgul Nazira
+			Safiya Saliha Saltanat Saule
+			Zifa Zuhra Zulfiya
+		}
+
+		dynasty_names = {
+			Alban Arabshah Argyn Ashtarhan Atygai
+			Baryn
+			Chelubey
+			Dulat
+			Janibek
+			Kerei Kuchum
+			Manggyt Mansur
+			Naiman Nogaybek
+			Qanly Qarluq Qoja Qonyrat Qypshaq
+			Shaibani Shiban Sunaq Suindik
+			Tabyn Tobyqty Tore Tuqay_Timur
+			Uisin Urys
+		}
+		lowborn = {
+		}
+	}
+		
+	western_kipchak_dialect = {	# Crimean, Astrakhani, Karachay, Balkar, Kumyk, Karaite		
+
+		male_names = {
+			Ahtem Amet Alim Arslan Ayder Ayhan 
+			Barlas Bekir Beqtash Beqtur Berke Burulday
+			Cafer Camolidin Celal Cemal Cengiz Cihan
+			Davut Demir Devlet
+			Emin Enver Erdem
+			Gazi
+			Haci Halim Hidir
+			Ibraim Ilhan Ismail Izzet
+			Lenur
+			Mengli Mehmed Memet Mesud Mustafay
+			Nazim Noman
+			Qamal Qasim Qurban
+			Redvan Refat Reshid Rustem
+			Saadet Sahib Selamet Selim Seyran Seit Shahin
+			Teyfuq Toqta Tugay Tuman
+			Umer Usein Uzeir
+			Yagya Yavuz Yusuf				
+		}
+
+		female_names = {
+			Adilye Alie Alime Anife Aybike Aycan Aytore
+			Cemile Ceylan  
+			Ediye Elmaz Emine Esma
+			Fatime Feride Feruze
+			Gulnar Gulsum Gulten
+			Halime
+			Ilmiye				
+			Leniye
+			Mavile Medine Melie Meryem Munise
+			Nurbike
+			Qamile
+			Remzie Reyhan
+			Saide Sanie Selime Sevgil
+			Yildiz
+			Zemine Zeyneb Zuhre Zulfiye
+		}
+
+		dynasty_names = {
+			Aratuq Arabat Argin
+			Badraq Barin Bucaq Burulcha
+			Cedichkul Cemboyliq Chikishke
+			Dayir
+			Geray
+			Kuchuk
+			Mangit Mansur 
+			Orbey
+			Qipchaq Qirq Qiyat Qongrat
+			Saruhan Secevut Serasker Sheyhun Shirin Shucun
+			Tugay
+			Yashlav Yedisan
+		}
+
+		lowborn = {
+		}
+	}
+}
+
+# to override the default adjective and noun database for cultural works
+#adjective = {
+#}
+#noun = {
+#}
+}

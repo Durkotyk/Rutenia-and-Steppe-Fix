@@ -1,0 +1,25 @@
+work_of_art_manager = {
+	#Kyiv - KIE
+	monument = { location = kyiv origin = kyiv quality = 70 creation_date = 1037.1.1 key = st_sophia_kyiv }
+	monument = { location = kyiv origin = kyiv quality = 30 creation_date = 1113.1.1 key = st_michael_kyiv }	
+	chronicle = { location = kyiv origin = kyiv quality = 85 creation_date = 1110.1.1 key = primary_chronicle }	
+	icon = { location = kyiv origin = thessaloniki quality = 50 creation_date = 915.1.1 key = dormition_icon_kyiv }
+	
+	#Chernihiv
+	monument = { location = chernihiv origin = chernihiv quality = 40 creation_date = 1032.1.1 key = transfiguration_chernihiv }
+	
+	#Volhynia
+	monument = { location = volodymyr origin = volodymyr quality = 40 creation_date = 1160.1.1 key = dormition_volodymyr }	
+	chronicle = { location = volodymyr origin = halych quality = 65 creation_date = 1296.1.1 key = halych_volhynian_chronicle }	
+	icon = { location = belz origin = thessaloniki quality = 35 creation_date = 836.1.1 key = black_madonna }
+	
+	#Halych
+	monument = { location = lviv origin = lviv quality = 89 creation_date = 1264.1.1 key = nicolas_lviv }
+	
+	#Polotsk	
+	monument = { location = polotsk origin = polotsk quality = 40 creation_date = 1044.1.1 key = st_sophia_polatsk }
+	
+	#Pinsk - PNK
+	icon = { location = pinsk origin = pinsk quality = 30 creation_date = 1182.1.1 key = kupiachitsy_cross_pinsk }
+	
+}

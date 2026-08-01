@@ -1,0 +1,196 @@
+# Added by Kotyk
+
+POD = { # Podolia	
+	
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow_dark"
+	color3 = "black"
+	
+	colored_emblem = {
+		#texture = "ce_tryzub_yar"
+		texture = "ce_sun_small_india.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }				
+	}		
+}
+
+URS = { # Kursk	
+	
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+	color3 = "black"
+	
+	colored_emblem = {
+		texture = "ce_falcon_rising_crowned.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color3
+		instance = { position = { 0.25 0.25 } rotation = -15 scale = { 0.35 0.35 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_falcon_rising_crowned.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color3
+		instance = { position = { 0.5 0.5 } rotation = -15 scale = { 0.35 0.35 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_falcon_rising_crowned.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color3
+		instance = { position = { 0.75 0.75 } rotation = -15 scale = { 0.35 0.35 } }				
+	}	
+}
+
+PRS = { # Pereiaslav	
+	
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "black"
+	
+	colored_emblem = {
+		texture = "ce_tower_random_small.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.7 0.7 } }				
+	}		
+}
+
+KZN = { # Kazan – griffin
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+
+	colored_emblem = {
+		texture = "ce_griffin_passant.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+UZB = { # Uzbek	
+	
+	pattern = "pattern_border_venice.dds"
+	color1 = "green"
+	color2 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_hand_couped.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.66 0.5 } scale = { 0.6 0.6 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent_moon.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.33 0.5 } scale = { 0.5 0.5 } }				
+	}		
+}
+
+QQY = { # Qirq Yer	
+	
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+	
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.66 } scale = { 1.0 1.0 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_tamgha_dorvon_zug.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.25 0.25 } scale = { 0.4 0.4 } }				
+	}	
+}
+
+KSM = { # Kasimov	
+	
+	pattern = "pattern_border_venice.dds"
+	color1 = "white"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_boat_shield.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.6 } scale = { 0.8 0.8 } }				
+	}	
+}
+
+MLR = { # Malkar	
+	
+	pattern = "pattern_base_25.dds"
+	color1 = "blue_light"
+	color2 = "white"
+	color3 = "white"
+	color4 = "black"
+	
+	colored_emblem = {
+		texture = "ce_mountain.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.45 } scale = { 0.65 0.5 } }				
+	}
+}
+
+SSO = { # Sobay	
+	
+	pattern = "pattern_canton_01.dds"
+	color1 = "green_light"
+	color2 = "yellow"
+	color3 = "green"
+	
+	colored_emblem = {
+		texture = "ce_arrows_bundle.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_stars_05_in_cross.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.75 0.5 } scale = { 0.7 0.8 } }				
+	}
+}
+
+ISC = { # Isaccea	
+	
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+	color3 = "green_light"
+	
+	colored_emblem = {
+		texture = "ce_tamgha_nogai_03.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.33 0.5 } scale = { 0.65 0.65 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_crescent_increscent_shield.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.67 0.5 } scale = { 0.65 0.65 } }				
+	}
+}

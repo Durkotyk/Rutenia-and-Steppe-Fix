@@ -1,0 +1,40 @@
+﻿oghuric_language = {    #https://en.wikipedia.org/wiki/Oghuric_languages
+    color = map_chuvash
+	family = turkic_language_family
+
+    patronym_suffix = "patronym_suffix_turkic"
+    patronym_suffix_son = "patronym_suffix_turkic_son"
+    patronym_suffix_daughter = "patronym_suffix_turkic_daughter"
+
+    location_suffix = "location_suffix_oghuric"
+
+    male_names = {
+        Ahtimer Ahtirek Akhtiyar Akparas Almanch Alyukka Araman Arkash Artaman
+        Artivan Atner Aytar Ekhim Entri Ikaruk Iksak Ille Ilmus Iprakhim Iskej
+        Iskenter Itris Jurat Kalep Karaddam Kashkar Kepir Khalim Khassan Kheritun
+        Khunachi Khursa Kheveter Kerkuri Kartash Kuprat Kurak Maksam Meketi Metri
+        Mikanur Miket Minever Mekete name_massa Pattyuk Paval_tatar Pukhtan Sakit
+        Santar Savas Sekhvettin Sespel Sherip Shussim Sitar Situlla Timay Tumna Upa
+        Uyap Vakrim Valem Valis Vaniher Vantyuk Vastirek Vayulla Velit Vesulla
+        Vihter Volkkam Yakhkha Yakhvar Yakkup Yamal Yashtirek Yisap Yakanat Yukhma
+        Yuman
+    }	
+    female_names = {
+        Anni Anukka Arikhve Ashapatman Atnapi Ayampi Aybala Chakak Chepchen Chekes
+        Elime Emine Erhime Kalime Kamite Kayakki Khamite Khapipe Khattime Kuline 
+        Keverle Leyle Maikka Memure Matine Narspi Arihva Saikhve Sakhipe Sakhva
+        Sapi Sapipe Sarine Savras Sheleme Selikhkha Surkki Tankka Tarie Tayikhve
+        Tunepi Ukapi Ukanesh Uksine Ukhime Uline Unes Varpikke Vartilet Vartuk
+        Zakhite 
+    }
+    dynasty_names = {
+    }
+    lowborn = {
+    }
+    
+    # to override the default adjective and noun database for cultural works
+    #adjective = {
+    #}
+    #noun = {
+    #}
+}

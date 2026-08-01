@@ -1,0 +1,492 @@
+﻿# Added more possible tags to ZAZ creation
+# Changed time limits
+
+namespace = flavor_zaz
+
+flavor_zaz.1 = { #Rise of Zaporozhie
+	hide_portraits = yes
+	type = country_event
+	title = flavor_zaz.1.title
+	desc = flavor_zaz.1.desc
+	outcome = neutral
+	historical_info = flavor_zaz.1.historical_info
+
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		region:steppes_region = {
+			any_location_in_region = {
+				top_owner ?= root
+			}
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = POL
+		tag = LIT
+		tag = PLC
+		tag = RUS
+		tag = KIE
+		tag = UKR
+		tag = HAL
+		tag = VOL
+		tag = GLH
+		tag = CRI	
+		tag = CHR
+		tag = NVS
+		tag = POD
+		tag = PRS	
+		from = 1400.1.1
+		to = 1650.1.1
+		monthly_chance = 3
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	trigger = {
+		NOT = { dominant_culture = culture:cossack_culture }
+		area:zaporizhzhia_area = { #Previously was has_presence_in, however this was changed to this to be able to make them spawning more viable
+			any_location_in_area = {
+				percent >= 0.1
+				is_ownable =  yes
+				owner ?= root
+			}
+		}
+		country_has_estate = estate_type:cossacks_estate
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+
+		ruler_or_regent ?= {
+			save_scope_as = target_ruler
+		}
+
+		area:zaporizhzhia_area = {
+			every_location_in_area = {
+				add_core = c:ZAZ
+			}
+		}
+	}
+
+	option = {
+		name = flavor_zaz.1.a
+
+		custom_tooltip = zaz_gains_cores_in_all_of_zaporizhzhia_area_tt
+	}
+
+	option = { #Release them as a subject
+		name = flavor_zaz.1.b
+
+		custom_tooltip = zaz_gains_cores_in_all_of_zaporizhzhia_area_tt
+
+		create_country_from_cores_in_our_locations = c:ZAZ
+
+		hidden_effect = {
+			random_owned_location = {
+				limit = {
+					area = area:zaporizhzhia_area
+				}
+				create_dynasty_from_location = random
+				last_dynasty_in_location = { save_scope_as = target_dynasty }
+			}
+			create_character = {
+				age = 25
+				culture = culture:cossack_culture
+				religion = religion:orthodox
+				dynasty = scope:target_dynasty
+				adm = { 50 75 }
+				dip = { 50 75 }
+				mil = { 50 75 }
+				save_scope_as = target_character
+			}
+		}
+
+		hidden_effect = {
+			c:ZAZ = {
+				set_new_ruler = scope:target_character
+				make_subject_of = {
+					target = root
+					type = subject_type:vassal
+				}
+
+				every_owned_location = {
+					change_integration_level = core
+				}
+
+				ordered_owned_location = {
+					order_by = development
+					max = 1
+					save_scope_as = target_location
+				}
+
+				set_capital = scope:target_location
+
+				change_culture = culture:cossack_culture
+
+				change_religion = religion:orthodox
+
+				capital ?= { create_sub_unit_of_category = sub_unit_category:army_heavy_infantry }
+
+				change_country_type = army
+			}
+		}
+	}
+}
+
+#Seeking Close Relations with the Patriarch
+flavor_zaz.2 = {
+	type = country_event
+	title = flavor_zaz.2.title
+	desc = flavor_zaz.2.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = ZAZ
+		from = 1500.1.1
+		to = 1821.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = religion:orthodox
+		any_international_organizations_member_of = {
+			leader_country != root
+			international_organization_type = international_organization_type:autocephalous_patriarchate
+		}	
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+
+		random_international_organizations_member_of = {
+			limit = {
+				leader_country != root
+				international_organization_type = international_organization_type:autocephalous_patriarchate
+			}
+			save_scope_as = target_international_organization
+
+			leader_country = {
+				save_scope_as = target_country
+				ruler_or_regent ?= {
+					save_scope_as = target_character2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_zaz.2.a
+		
+		transfer_yearly_gold = {
+			value = 0.15
+			target = scope:target_country
+		}
+
+		add_opinion_mutual_effect = {
+			modifier = zaz_closer_relations_with_church
+			target = scope:target_country
+		}
+	}
+
+	option = {
+		name = flavor_zaz.2.b
+
+		add_religious_influence = religious_influence_weak_penalty
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+#Changing allegiance to Russia
+flavor_zaz.1000 = {
+	type = country_event
+	title = flavor_zaz.1000.title
+	desc = flavor_zaz.1000.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = ZAZ
+		from = 1580.1.1
+		to = 1700.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		is_subject_of = c:PLC
+		country_exists = c:RUS
+		c:RUS ?= {
+			is_subject = no
+			at_war = no
+		}
+		liberty_desire >= 75
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:PLC = {
+			save_scope_as = target_country
+			ruler_or_regent ?= {
+				save_scope_as = target_character
+			}
+		}
+
+		c:RUS = {
+			save_scope_as = target_country2
+			ruler_or_regent ?= {
+				save_scope_as = target_character2
+			}
+		}
+
+		save_scope_as = target_country3
+		ruler_or_regent ?= {
+			save_scope_as = target_character3
+		}
+	}
+
+	option = {
+		name = flavor_zaz.1000.a
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				scope:target_country.stability < -10
+			}
+
+			modifier = {
+				factor = 8
+				scope:target_country2.army_size < scope:target_country.army_size
+			}
+
+			modifier = {
+				factor = 2
+				opinion = {
+					target = scope:target_country
+					value > 0
+				}
+			}
+		}
+		
+		scope:target_country2 = {
+			trigger_event_non_silently = flavor_zaz.1001
+		}
+
+		custom_tooltip = zaz_russia_will_declare_war_if_they_accept_tt
+	}
+
+	option = {
+		name = flavor_zaz.1000.b
+
+		ai_chance = {
+			base = 60
+		}
+		
+		add_liberty_desire = liberty_desire_mild_minus
+
+		custom_tooltip = zaz_no_rebellion_tt
+	}
+}
+
+flavor_zaz.1001 = {
+	type = country_event
+	title = flavor_zaz.1001.title
+	desc = flavor_zaz.1001.desc
+	outcome = neutral
+	major = yes
+	
+	major_trigger = {
+		OR = {
+			this = scope:target_country3
+			this = scope:target_country
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	
+	option = {
+		name = flavor_zaz.1001.a
+
+		ai_chance = {
+			base = 40
+
+			modifier = {
+				factor = 8
+				scope:target_country2.army_size < scope:target_country.army_size
+			}
+
+			modifier = {
+				factor = 0.2
+				scope:target_country2.army_size > scope:target_country.army_size
+			}
+		}
+		
+		scope:target_country3 = {
+			if = {
+				limit = {
+					can_declare_legal_war_on = { target = scope:target_country }
+				}
+			declare_war_with_cb = {
+				target = scope:target_country
+				type = casus_belli:cb_annex
+				}
+			}
+			else = {
+				add_casus_belli = {
+					target = scope:target_country
+					type = casus_belli:cb_annex
+				}
+			}
+
+			make_subject_of = {
+				target = scope:target_country2
+				type = subject_type:vassal
+			}
+		}
+	}
+
+	option = {
+		name = flavor_zaz.1001.b
+
+		ai_chance = {
+			base = 60
+		}
+		
+		add_opinion_mutual_effect = {
+			modifier = zaz_rejected_independence_support
+			target = scope:target_country3
+		}
+	}
+}
+
+#Request for the Kleinody
+flavor_zaz.1100 = {
+	type = country_event
+	title = flavor_zaz.1100.title
+	desc = flavor_zaz.1100.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = ZAZ
+		from = 1550.1.1
+		to = 1700.1.1
+		monthly_chance = 2
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			is_subject_of = c:PLC
+			is_subject_of = c:POL
+		}
+
+		government_type = government_type:monarchy
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		overlord = {
+			save_scope_as = target_country
+			ruler_or_regent ?= {
+				save_scope_as = target_character
+			}
+		}
+
+		save_scope_as = target_country2
+		ruler_or_regent ?= {
+			save_scope_as = target_character2
+		}
+	}
+
+	option = {
+		name = flavor_zaz.1100.a
+		
+		custom_tooltip = zaz_request_work_of_art_from_overlord_tt
+
+		scope:target_country = { trigger_event_non_silently = flavor_zaz.1101 }
+	}
+
+	option = {
+		name = flavor_zaz.1100.b
+		
+		custom_tooltip = zaz_no_request_from_overlord_tt
+	}
+}
+
+flavor_zaz.1101 = {
+	type = country_event
+	title = flavor_zaz.1101.title
+	desc = flavor_zaz.1101.desc
+	outcome = neutral
+	major = yes
+
+	major_trigger = {
+		this = scope:target_country2
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+	
+	option = {
+		name = flavor_zaz.1101.a
+		
+		scope:target_country2 = {
+			capital ?= {
+				create_art = {
+					key = kleinody
+					quality = 65
+					type = work_of_art_type:regalia
+				}
+			}
+			add_liberty_desire = liberty_desire_mild_minus
+		}
+
+	change_gold_effect = { scale = -2 }
+	}
+
+	option = {
+		name = flavor_zaz.1101.b
+		
+		scope:target_country2 = {
+			add_liberty_desire = liberty_desire_mild_plus
+		}
+	}
+}

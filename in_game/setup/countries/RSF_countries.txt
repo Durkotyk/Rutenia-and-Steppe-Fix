@@ -1,0 +1,199 @@
+﻿# Vanilla
+TRY_REPLACE:DUMMY = {
+	color = rgb { 40 40 40 }
+	color2 = rgb { 110 27 27 }
+
+	culture_definition = danish
+	religion_definition = catholic
+}
+TRY_REPLACE:PIR = {
+	color = rgb { 116 143 139 }
+	color2 = rgb { 110 27 27 }
+
+	culture_definition = danish
+	religion_definition = catholic
+}
+TRY_REPLACE:MER = {
+	color = rgb { 72 85 83 }
+	color2 = rgb { 110 27 27 }
+
+	culture_definition = danish
+	religion_definition = catholic
+}
+
+TRY_REPLACE:KIE = {
+	color = map_KYI
+
+	culture_definition = ruthenian
+	religion_definition = orthodox
+
+	description_category = military
+	difficulty = 4	
+}
+
+TRY_REPLACE:VOL = {
+	color = map_VOL
+
+	culture_definition = volhynian_culture
+	religion_definition = orthodox
+}
+
+TRY_REPLACE:ZAZ = {
+	color = map_ZAZ
+
+	is_historic = yes
+	culture_definition = cossack_culture
+	religion_definition = orthodox
+}
+
+TRY_REPLACE:NSL = {
+	color = map_NSL
+
+	culture_definition = verkhovian
+	religion_definition = orthodox
+}
+
+TRY_REPLACE:KCH = {
+	color = map_KCH
+
+	culture_definition = verkhovian
+	religion_definition = orthodox
+}
+
+TRY_REPLACE:KZK = {
+	color = map_KZK
+
+	culture_definition = verkhovian
+	religion_definition = orthodox
+}
+
+TRY_REPLACE:TRS = {
+	color = map_TRS
+
+	culture_definition = verkhovian
+	religion_definition = orthodox
+}
+
+TRY_REPLACE:GLH = { #Golden Horde
+	color = map_golden_horde
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = mishar
+	religion_definition = sunni
+
+	description_category = military
+	difficulty = 4
+}
+
+TRY_REPLACE:ATR = { #Great Horde
+	color = hsv360 { 43 76 82 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = mishar
+	religion_definition = sunni
+
+}
+
+TRY_REPLACE:CHG = { #Chagatai
+	color = map_CHG
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = khorezmian_culture
+	religion_definition = tengri
+
+	description_category = military
+	difficulty = 4
+}
+
+# Added by Kotyk
+
+POD = { #Podolia
+	color = map_POD
+
+	culture_definition = cossack_culture
+	religion_definition = orthodox	
+
+	description_category = military
+	difficulty = 4	
+}
+
+PRS = { #Pereiaslav
+	color = map_PRS
+
+	culture_definition = ruthenian
+	religion_definition = orthodox
+
+	#is_historic = yes
+
+	description_category = military
+	difficulty = 4
+}
+
+URS = { #Kursk
+	color = map_URS
+
+	culture_definition = severian
+	religion_definition = orthodox	
+
+	description_category = military
+	difficulty = 4	
+}
+
+KZN = { #Kazan
+	color = map_KZN
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = kazani
+	religion_definition = sunni
+
+}
+
+KSM = { #Kasimov
+	color = map_KSM
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = mishar
+	religion_definition = sunni
+
+}
+
+UZB = { #Uzbek
+	color = map_UZB
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = uzbek_culture
+	religion_definition = sunni
+
+}
+
+SSO = { #Sobay
+	color = map_SSO
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}
+
+MLR = { #Malkar
+	color = map_balkar
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = karachay_culture
+	religion_definition = karachay_balkar_paganism
+}
+
+QQY = { #Qirq Yer
+	color = map_QQY
+	color2 = rgb { 61 8 81 }
+
+	culture_definition = alan_culture
+	religion_definition = orthodox
+}
+
+ISC = { #Isaccea
+	color = map_ISC
+	color2 = rgb { 61 8 81 }
+
+	culture_definition = crimean
+	religion_definition = sunni
+}

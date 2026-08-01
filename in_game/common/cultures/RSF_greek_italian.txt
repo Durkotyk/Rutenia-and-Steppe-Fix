@@ -1,0 +1,60 @@
+﻿# GREEK
+TRY_INJECT:cappadocian_greek_culture = {
+	opinions = {
+		greek_culture = kindred
+		pontic_greek_culture = kindred
+		armenian_culture = positive
+		turkish_culture = negative
+		turkoman_culture = negative
+	}
+}
+
+TRY_INJECT:greek_culture = {
+	opinions = {
+		cappadocian_greek_culture = kindred
+		pontic_greek_culture = kindred
+		gothic_culture = kindred
+		armenian_culture = positive
+		turkoman_culture = negative
+	}
+}
+
+TRY_INJECT:griko_culture = {
+	opinions = {
+		greek_culture = positive
+	}
+}
+
+TRY_INJECT:pontic_greek_culture = {
+	opinions = {
+		greek_culture = kindred
+		cappadocian_greek_culture = kindred
+		gothic_culture = kindred
+		armenian_culture = kindred
+		alan_culture = positive
+		ligurian = positive
+		crimean = negative
+		laz_culture = positive
+		turkish_culture = negative
+		turkoman_culture = negative
+	}
+}
+
+TRY_INJECT:gothic_culture = {
+	opinions = {
+		greek_culture = kindred
+		pontic_greek_culture = kindred
+		armenian_culture = kindred
+		alan_culture = positive
+		crimean = negative
+	}
+}
+
+# ITALIAN
+TRY_INJECT:ligurian = { 
+	opinions = {
+		greek_culture = positive
+		pontic_greek_culture = positive
+		crimean = negative
+	}
+}

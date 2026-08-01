@@ -1,0 +1,35 @@
+﻿l_english:
+
+ #Kyiv
+ st_sophia_kyiv: "Saint Sophia Cathedral"
+ st_sophia_kyiv_desc: "Completed in the 11th century under Grand Prince Yaroslav the Wise, Saint Sophia Cathedral became the spiritual and political heart of Kyivan Rus’. Its glittering mosaics and frescoes showcased imperial Byzantine artistry, underscoring Kyiv’s aspiration to cultural preeminence in Eastern Europe. Beyond its religious role, the cathedral served as a venue for princely ceremonies, diplomatic audiences, and the ratification of major agreements."
+ st_michael_kyiv: "Saint Michael's Golden-Domed Monastery"
+ st_michael_kyiv_desc: "Built in the Middle Ages by Sviatopolk II Iziaslavych, the monastery comprises the cathedral church, the Refectory Church of the Holy Apostle and Evangelist John the Theologian, constructed in 1713, the Economic Gate, constructed in 1760, and the bell tower, which was added in the 1710s. The exterior of the structure was remodelled in the Ukrainian Baroque style during the 18th century; the interior retained its original Byzantine architecture."
+ primary_chronicle: "Primary Chronicle"
+ primary_chronicle_desc: "Compiled in the early 12th century, traditionally attributed to the monk Nestor of the Kyivan Cave Monastery, the Primary Chronicle is the foundational historical narrative of Kyivan Rus’. Drawing upon oral traditions, earlier annals, and ecclesiastical records, it presents a structured account of the origins of the Rus’, the reigns of their princes, and the Christianization of the realm. It remains one of the most influential written monuments of the medieval East Slavic world."
+ dormition_icon_kyiv: "Dormition of the Mother of God Icon"
+ dormition_icon_kyiv_desc: "The Dormition of the Mother of God icon of the Kyiv Pechersk Lavra is traditionally regarded as an 11th-century gift from the Greek master builders who constructed the monastery’s Dormition Cathedral. Executed according to the refined Byzantine canon, the icon became one of the Lavra’s most revered sacred images. Over time, it emerged as a symbol of the Lavra’s spiritual authority and of the enduring cultural ties between Kyivan Rus’ and the Byzantine world."
+ 
+ #Chernihiv
+ transfiguration_chernihiv: "Transfiguration Cathedral"
+ transfiguration_chernihiv_desc: "Founded in the mid-11th century under Prince Mstyslav of Chernihiv, the Transfiguration Cathedral is one of the oldest surviving stone churches of Kyivan Rus’. Built by Byzantine-trained craftsmen, its austere masonry, domed silhouette, and early fresco program reflect the architectural transition from imperial Constantinopolitan models to a distinct Ruthenian style. As the principal church of the Chernihiv principality, it served not only as a center of worship but also as a dynastic mausoleum and a venue for major political ceremonies."
+ 
+ #Volhynia
+ dormition_volodymyr: "Dormition Cathedral"
+ dormition_volodymyr_desc: "In 1156, the great-grandson of Vladimir II Monomakh, Mstyslav II Izyaslavych, who was a regional prince in Volodymyr, and later the Grand Prince of Kiev, built a new church in honor of the Dormition of the Blessed Virgin Mary. The consecration of the church was done after its painting in 1160. After the consecration, the church became a cathedral, continuing the history of the first episcopal see of the Volyn Diocese, founded on these lands in 992. The cathedral was the burial place of princes, boyars and bishops. Under the church there are 6 grand princely, 2 episcopal and many noble persons' tombs. Prince Mstyslav II, the builder of the church, is also buried here."
+ halych_volhynian_chronicle: "Halych-Volhynian Chronicle"
+ halych_volhynian_chronicle_desc: "Compiled in the 13th century within the intellectual milieu of the Romanovych court, the Halych-Volhynian Chronicle offers a sustained and structured account of the political, military, and diplomatic affairs of the Halych-Volhynian principality. Drawing upon administrative records, oral testimony, and earlier annalistic material, it documents dynastic contests, external relations, and the principality’s efforts to maintain its sovereignty amid evolving regional dynamics. Notable for its elevated literary style and its acute attention to matters of governance, the chronicle constitutes the principal historiographic monument of the western Rus’ lands and an indispensable source for the study of their institutional and cultural development."
+ black_madonna: "Black Madonna"
+ black_madonna_desc: "The Black Madonna is a revered icon traditionally associated with the princes of Halych-Volhynia. It held a distinguished place in the political and spiritual life of the region. Believed to be of Byzantine origin and introduced to the principality through dynastic or diplomatic channels, it served as a palladium of rulership, invoked for the protection of the land and its sovereigns. By the late medieval period, the icon had become closely linked to the city of Belz, where it functioned as a focal point of local devotion and a symbol of dynastic legitimacy. Its subsequent translation to Poland elevated its status within the broader East-Central European religious landscape, reflecting the enduring prestige attributed to its Ruthenian provenance."
+ 
+ #Halych
+ nicolas_lviv: "Saint Nicholas Church"
+ nicolas_lviv_desc: "Constructed in the late 13th century by the Orthodox community of Lviv, St. Nicholas Church stands as one of the oldest surviving ecclesiastical monuments in the city. Erected in a characteristic Rus’ style with later Gothic and Renaissance modifications, it served as the principal center of Orthodox worship for the local Ruthenian population."
+ 
+ #Polotsk
+ st_sophia_polatsk: "Saint Sophia Cathedral"
+ st_sophia_polatsk_desc: "Established in the 11th century under the patronage of the Polotsk princes, Saint Sophia Cathedral was conceived in deliberate emulation of Kyiv’s Saint Sophia, thereby asserting the principality’s ecclesiastical authority and political stature. Its architectural design integrates Byzantine prototypes with regional construction traditions, reflecting both cultural affiliation and local adaptation. The cathedral functioned as the principal locus of liturgical observance, dynastic ceremonial activity, and ecclesiastical administration, serving to consolidate the sovereignty and institutional identity of the Polotsk principality."
+ 
+ #Pinsk
+ kupiachitsy_cross_pinsk: "Kupiacičy Cross"
+ kupiachitsy_cross_pinsk_desc: "The Kupiacičy Cross, considered the oldest Belarusian icon, was discovered on 15 November 1182 under miraculous circumstances according to church legend. It was venerated as a wonder-working image of the Mother of God, richly framed in silver and kept in a specially built church."

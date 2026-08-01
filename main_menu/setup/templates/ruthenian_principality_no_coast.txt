@@ -1,0 +1,79 @@
+﻿starting_technology_level = 3
+government = {
+    type = monarchy
+    heir_selection = cognatic_primogeniture
+   
+    centralization_vs_decentralization = 80
+    aristocracy_vs_plutocracy = -70
+    serfdom_vs_free_subjects = -80
+    traditionalist_vs_innovative = -85
+    spiritualist_vs_humanist = -70
+    mercantilism_vs_free_trade = -20
+    offensive_vs_defensive = 45
+    land_vs_naval = -80
+    quality_vs_quantity = 33
+    belligerent_vs_conciliatory = 80
+    capital_economy_vs_traditional_economy = 95
+    individualism_vs_communalism = 30
+    outward_vs_inward = 40
+    parliament = {
+        parliament_type = estate_parliament
+    }
+   
+	reforms = {
+		feudal_nobility
+		agricultural_cultivation
+	}
+			
+    privilege = {
+        #nobles
+        auxilium_et_consilium
+		banal_lordship
+        nobles_land_rights
+		noble_serfdom_rights
+        noble_marriage_rights
+        noble_fortification_licenses
+
+        #clergy
+        reduced_from_military_obligations
+        clergy_powerful_dioceses
+        clergy_strengthen_faith
+        clergy_literacy_rights
+
+        #burghers
+        market_fairs
+        formal_guilds
+        building_roads_rights
+
+        #Commoners
+        allow_hunting
+        communal_lands
+		no_labor_sunday
+		peasants_fewer_levies
+		
+		#Tribesmen
+		tribes_allow_gatherings
+		tribes_land_rights
+		tribes_pasture_access
+		tribes_tribal_levies
+		tribes_tribal_registry
+		tribes_protected_faith
+    }
+    laws = {
+        feudal_de_jure_law = by_tradition
+        medieval_levy_law = peasant_levies
+        royal_court_customs_law = aristocratic_court_policy
+        patriarchate_law = separated_patriarchate_policy
+        censorship = limited_censorship
+        education_masses_law = uneducated_masses_education
+        administrative_system = feudal_administration
+        cultural_traditions_law = martial_society
+        marriage_law = monogamous_marriage
+        heir_religion_law = heir_same_religion
+        legal_code_law = russkaya_pravda_policy
+        distribution_of_power_law = dop_traditional_distribution_of_power
+        immigration_law = open_borders_law
+        mining_law = nobles_mining_law
+		coin_laws = gold_and_silver_coins
+    }
+}

@@ -1,0 +1,31 @@
+﻿# BALTIC
+TRY_INJECT:aukstaitian = {
+	opinions = {
+		curonian = kindred
+		polatskian_culture = positive
+		polesian_culture = positive
+		cuman_culture = positive
+	}
+}
+
+TRY_INJECT:samogitian = {
+	opinions = {
+		polatskian_culture = positive
+		polesian_culture = positive
+		cuman_culture = positive
+	}
+}
+
+TRY_INJECT:german_baltic = {
+	opinions = {
+		pruthenian = enemy
+	}
+}
+
+# GERMAN
+TRY_INJECT:prussian = { 
+	opinions = {
+		pruthenian = enemy
+		aukstaitian = enemy
+	}
+}

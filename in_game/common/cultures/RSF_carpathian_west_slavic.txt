@@ -1,0 +1,108 @@
+﻿# CARPATHIAN
+TRY_INJECT:aromanian = { 
+	opinions = {
+		wallachian = positive
+		transylvanian = positive
+		moldovan = positive
+		istroromanian = positive
+	}
+}
+
+TRY_INJECT:istroromanian = {
+	opinions = { 
+		aromanian = positive
+		moldovan = positive
+		transylvanian = positive
+		wallachian = positive
+	}
+}
+
+TRY_INJECT:transylvanian = {
+	opinions = {
+		aromanian = positive
+		istroromanian = positive
+	}
+}
+
+
+TRY_INJECT:wallachian = {
+	opinions = {
+		aromanian = positive
+		istroromanian = positive
+	}
+}
+
+TRY_INJECT:moldovan = {
+	opinions = {
+		aromanian = positive
+		istroromanian = positive
+	}	
+}
+
+
+# WEST SLAVIC
+
+TRY_INJECT:czech = {
+	opinions = {
+		silesian = positive
+	}
+}
+
+TRY_INJECT:greater_polish = {
+	opinions = {
+		kashubian = positive		
+		polabian = positive
+	}
+}
+
+TRY_INJECT:kashubian = {
+	opinions = {
+		lesser_polish = kindred
+		mazovian = kindred
+	}
+}
+
+TRY_INJECT:lesser_polish = {
+	opinions = {
+		kashubian = positive		
+		polabian = positive
+	}
+}
+
+TRY_INJECT:mazovian = {
+	opinions = {
+		kashubian = positive		
+		polabian = positive
+		silesian = kindred
+	}
+}
+
+TRY_INJECT:moravian = {
+	opinions = {
+		silesian = positive
+	}
+}
+
+TRY_INJECT:polabian = {
+	opinions = {
+		greater_polish = positive
+		lesser_polish = positive
+		mazovian = positive
+	}
+}
+
+TRY_INJECT:silesian = {
+	opinions = {
+		czech = positive
+		moravian = positive
+		mazovian = kindred
+		kashubian = positive		
+		polabian = positive
+	}
+}
+
+TRY_INJECT:sorbian = {
+	opinions = {
+		greater_polish = positive
+	}
+}

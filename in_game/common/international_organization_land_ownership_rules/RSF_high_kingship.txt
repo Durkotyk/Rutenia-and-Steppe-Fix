@@ -1,0 +1,7 @@
+﻿TRY_INJECT:high_kingship_land_ownership = {
+
+	# applied to locations that are owned by the international organization
+	modifier = {		
+		local_institution_growth_modifier = 0.1 # Changed because of changes to the Tribal government
+	}
+}

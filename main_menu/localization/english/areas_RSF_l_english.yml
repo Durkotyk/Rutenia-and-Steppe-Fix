@@ -1,0 +1,20 @@
+﻿l_english:
+ # Siberia
+ irkutsk_area: "Irkut"
+ tomsk_area: "Selkup"
+ omsk_area: "Irtysh"
+ kansk_area: "Khakasia"
+ bratsk_area: "Evenkia"
+
+ # Don and Volga
+ chervleny_yar_area: "Chervleny Yar"
+ tambov_area: "Ukek"
+ lower_don_area: "Volga Steppe"
+ astrakhan_area: "Caspian Steppe"
+ lower_yik_area: "Yik"
+ mordva_area: "Mordva"
+ majar_area: "Kuma"
+ azov_area: "Lower Don"
+
+ # Ukraine
+ zaporizhzhia_area: "Zaporizhia"

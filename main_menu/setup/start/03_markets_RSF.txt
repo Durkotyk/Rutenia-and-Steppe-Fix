@@ -1,0 +1,64 @@
+market_manager = {	
+	# Added by Kotyk
+	
+	# Ruthenia	
+	add_market = lviv
+	#add_market = volodymyr
+	#add_market = slutsk
+	#add_market = polotsk
+	#add_market = grodno	
+	#add_market = bryansk	
+	
+	# Russia
+	#add_market = pskov
+	#add_market = staraya_ladoga
+	add_market = smolensk
+	#add_market = kursk
+	#add_market = ryazan
+	#add_market = tver
+	#add_market = yaroslavl
+	add_market = vologda
+	#add_market = veliky_ustyug
+	add_market = kholmogory
+	add_market = nizhny_novgorod
+	add_market = perm
+	#add_market = vyatka
+	
+	# Steppes	
+	add_market = azok
+	add_market = ukek
+	#add_market = rechnoye
+	#add_market = majar
+	#add_market = kupiansk
+	#add_market = voronezh
+	#add_market = mokhcha
+	#add_market = poganovka
+	add_market = yaik
+	#add_market = ufa
+	add_market = almaliq
+	
+	# Poland & Baltia
+	add_market = vilnius	
+	add_market = gdansk
+	#add_market = poznan
+	#add_market = plock
+	#add_market = wroclaw	
+	
+	# Scandinavia
+	#add_market = vyborg
+	add_market = abo
+	add_market = lulea
+	
+	# Caucasus
+	#add_market = maykop	
+	#add_market = kutaisi
+	#add_market = yerevan
+	#add_market = baku	
+	
+	# Carpathia & Balkans
+	add_market = iasi
+	#add_market = cetatea_alba
+	#add_market = kosice
+	#add_market = cluj
+	#add_market = bucharest	
+}

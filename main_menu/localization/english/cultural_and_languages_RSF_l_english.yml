@@ -1,0 +1,18 @@
+﻿l_english:
+ # Cultural Templates
+
+ karaite_culture: "Karaite"
+ abkhazian_culture: "Apsua"
+ halychian_culture: "Halychan"
+ verkhovian: "Verkhovian"
+ rusyn_culture: "Carpatho-Rusyn"
+
+ astrakhani: "Astrakhani Tatar"
+ crimean: "Crimean Tatar"
+ kazani: "Kazani Tatar"
+ mishar: "Mishari Tatar"
+ nogai: "Nogai Tatar"
+
+ georgian_language: "Kartvelian"
+ western_kipchak_dialect: "Western Kipchak"
+ eastern_kipchak_dialect: "Eastern Kipchak"

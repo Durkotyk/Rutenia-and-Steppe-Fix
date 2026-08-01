@@ -1,0 +1,137 @@
+#Added by Kotyk
+road_network = {
+	
+	# Ruthenia
+	# Lviv-Volhynia Road
+	liuboml = turiisk
+	turiisk = volodymyr
+	volodymyr = sokal
+	sokal = belz
+	belz = zhovkva
+	zhovkva = lviv
+	
+	# Kyiv-Volhynia Road
+	volodymyr = rozhyshche
+	rozhyshche = lutsk
+	dubno = lutsk
+	ostroh = dubno
+	iziaslav = ostroh
+	polonne = iziaslav
+	polonne = chudniv
+	zhytomyr = chudniv
+	zhytomyr = korostyshiv
+	zdvizhen = korostyshiv
+	kyiv = zdvizhen
+	
+	# Barlad Road
+	lviv = zhydachiv
+	halych = zhydachiv	
+	halych = tysmenytsia
+	tysmenytsia = sniatyn
+	sniatyn = cernauti
+	cernauti = storozhynets
+	storozhynets = siret
+	siret = suceava	
+	suceava = cotnari
+	cotnari = iasi
+	iasi = vaslui
+	vaslui = tutova
+	tutova = barlad
+	barlad = oancea
+	oancea = cudalbi
+	cudalbi = galati
+	
+	iasi = targu_lapusnei
+	targu_lapusnei = chisinau
+	chisinau = tighina
+	tighina = cetatea_alba
+	
+	# Steppes
+	# Northern Silk Road
+	urgench = xojeli
+	xojeli = pulzhai
+	pulzhai = uchkuduk
+	uchkuduk = beleuli
+	beleuli = shuruk
+	shuruk = kyushe
+	kyushe = sam
+	sam = koskuduk
+	koskuduk = ushkan
+	ushkan = tenteksor
+	tenteksor = sarayjuk
+	sarayjuk = ryn
+	ryn = ganyushkino
+	ganyushkino = krasny_yar
+	krasny_yar = astrakhan	
+	krasny_yar = khosheutovo
+	khosheutovo = rechnoye
+	rechnoye = mikhaylovka_pontic
+	mikhaylovka_pontic = bolkhuny
+	bolkhuny = pologoye_zaymishche
+	pologoye_zaymishche = srednyaya_akhtuba
+	srednyaya_akhtuba = beljamen	
+
+	# Road to Kazan along the Volga
+	beljamen = zenzevatka
+	zenzevatka = kamyshin
+	kamyshin = goly_karamysh
+	goly_karamysh = ukek
+	ukek = tereshka
+	tereshka = malykovka
+	malykovka = sosnovy_ostrov
+	sosnovy_ostrov = khvorostyanka
+	khvorostyanka = samara
+	samara = kondurcha
+	kondurcha = stavropol_na_volge
+	stavropol_na_volge = cherdakly
+	cherdakly = staraya_mayna
+	staraya_mayna = bolghar
+	bolghar = kazan
+	
+	# Orda Road to Moscow along the Don
+	beljamen = ilovlya
+	ilovlya = zimnyatsky
+	zimnyatsky = kumylzhenskaya
+	kumylzhenskaya = veesky
+	veesky = kalach
+	kalach = verkhny_mamon
+	verkhny_mamon = novaya_pokrovka
+	novaya_pokrovka = voronezh
+	voronezh = teshevka
+	teshevka = talitsa_yelets
+	talitsa_yelets = kurkino
+	kurkino = bogoroditsk
+	bogoroditsk = tula_russia
+	tula_russia = lopasnya
+	lopasnya = serpukhov
+	serpukhov = przemysl_moscow	
+	
+	#Crimean Road
+	tavan = aslan_horod
+	aslan_horod = qalancaq
+	qalancaq = or_qapi
+	or_qapi = kalay
+	kalay = seyitler
+	seyitler = solkhat
+	solkhat = kaffa	
+	
+	# Georgian Road (Yerevan to Majar)
+	amberd = artashavan
+	artashavan = spitak
+	spitak = lori
+	lori = gagi
+	gagi = tbilisi	
+	tbilisi = mtskheta
+	mtskheta = dusheti
+	dusheti = jariekhi
+	jariekhi = koban
+	koban = tatartup
+	tatartup = dzhulat
+	dzhulat = novopavlovsk
+	novopavlovsk = zelenokumsk
+	zelenokumsk = majar
+	
+	# Ottomans
+	izmit = iznik
+	iznik = bursa	
+}

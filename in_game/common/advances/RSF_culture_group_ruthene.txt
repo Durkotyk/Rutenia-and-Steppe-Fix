@@ -1,0 +1,66 @@
+﻿############################
+# age_1_traditions
+############################
+varangians_greeks = {
+	age = age_1_traditions
+	icon = nav_adept_traders
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+	merchant_maintenance_efficiency = 0.10
+
+	requires = road_building
+}
+
+
+############################
+# age_2_renaissance
+############################
+ruthenian_cochineal = {
+	age = age_2_renaissance
+	icon = a_dynamic_society
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+	global_dyes_output_modifier = 0.1
+	ai_weight = { add = 100 }
+	requires = patron_of_art
+}
+
+
+############################
+# age_3_discovery
+############################
+heritage_of_the_rus = {
+	age = age_3_discovery
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+	cultural_tradition_modifier = 0.2
+	ai_weight = { add = 100 }
+	requires = crown_power_advance_discovery
+}
+
+
+############################
+# age_4_reformation
+############################
+cyrillic_printing = {
+	age = age_4_reformation
+	icon = chacery_slavonic
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+	cultural_influence_modifier = 0.1
+	ai_weight = { add = 100 }
+	requires = artists_advance_reformations
+}
+
+
+############################
+# age_5_absolutism
+############################
+
+############################
+# age_6_revolutions
+############################

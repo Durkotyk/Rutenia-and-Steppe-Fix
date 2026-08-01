@@ -1,0 +1,195 @@
+﻿turkish_language = { # oghuz. Ottoman spelling has been chosen
+	color = color_language_turkish
+
+	family = turkic_language_family
+
+	male_names = {
+		name_aaron name_abdulaziz name_abdulhamid name_abdullah name_abdulmajid name_abdulrahman name_abraham name_afsin name_ahmad Aksonqor name_ala.name_al_din name_alexander name_ali name_alikhan name_alim Alp_Arslan Alp_Yurek Alptigin name_amin name_arif name_artuk Ayaz name_aydin Aydogan Aytekin 
+		name_bahador Basbuga Batuhan Baturay name_baybars Bayezid Baytas Belek Berkan Berkiyaruk Boru Bozan Bugra Bulend Burak
+		Cagri Caka name_candar Cuneyd
+		Danismend name_david name_dilmac Dogan Dogukan Dukak name_dulkadir Dundar Dursun 
+		name_elias Erdem name_eretna Ertan Ertekin name_ertugrul 
+		name_farhad
+		name_genghis name_germiyan name_ghiyath.name_al_din
+		name_hamid name_hasan name_husayn
+		Ilgazi name_inanc name_isaac name_ishmael name_izz.name_al_din
+		name_jahangir name_jalal.name_al_din name_jam name_jamal name_james name_jesus name_jonas name_joseph
+		Kaikaus Kaikhusraw Kaiqobad name_kamal Kara name_karaman Kaya Kaytun name_khalil name_khayr.name_al_din name_khidr name_kilic Korkut name_kubad Kurboga Kutalmis Kutay Kutlug 
+		name_mahmud name_malik name_malik.name_shah name_masud Mengucek name_moses name_muhammad name_murad name_mustafa
+		name_nizam.name_al_din
+		Ogulcan name_omar name_orhan name_osman
+		Porsuk
+		name_qamar name_qasim
+		name_rajab name_ramazan name_ridwan name_rostam
+		Saim name_salih name_salim name_salomon Saltuk Saruca Savtekin Savur name_sayf.name_al_din Sehinsah Selcuk Sencer name_sinan Sobuk Sokmen Sonmez 
+		Tanrivermis Tekin name_timur name_timur.name_tash Togay Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus  
+		Uluc Umur
+		Yaman Yasar Yinal    
+	}
+	female_names = {
+		name_aisha name_amina name_asli name_asli.name_khan Ayasun Ayla name_ayneh Ayten Azize
+		Bahar Banu Bozcin
+		Canan Ceylan Cicek Cilen Ciltanesi 
+		name_daphne name_darya Dilek name_dunya  
+		Esin
+		name_fatima name_firuzeh
+		name_golbahar Gulay Gulcicek Gulfem Gundes Gunes
+		Handan name_homa name_huriya
+		Ilknur Ipek Ipekel Irge
+		Karacik name_khadija name_khorram Kosem name_kulthum name_kumus
+		name_laleh name_leyla
+		name_mansura name_marwa Mihrimah Mutlu 
+		Nagihan Nergis Neslihan name_niloufar name_nur Nurbanu
+		Ozgul Ozlem    
+		Peksen 
+		name_safiya	Samur Sarica name_sati name_shahnaz name_sharifa Serap Sevilay Sevindik Sibel Sirin Songul Sumru name_sybil
+		Tekce Terkhen Tura
+		Umay Usunbike 
+		Yakut Yeldem Yildiz 
+		name_zahra name_zuhal    	
+		
+		Akgul #Kazakh
+		Alime #Crimean Tatar
+	}
+	dynasty_names = {
+		
+	}
+	lowborn = {
+		Aydogdu Balaban name_ertugrul Gunduz Ipek Karatay name_kilic Sonmez Yasar
+	}
+	
+	# to override the default adjective and noun database for cultural works
+	#adjective = {
+	#}
+	#noun = {
+	#}
+
+	patronym_suffix = "patronym_suffix_turkish"
+	patronym_suffix_son = "patronym_suffix_turkish_son"
+	patronym_suffix_daughter = "patronym_suffix_turkish_daughter"
+
+	location_suffix = "location_suffix_turkish"
+
+	descendant_suffix_male = "descendant_suffix_turkish_male"
+	descendant_suffix_female = "descendant_suffix_turkish_female"
+
+	character_name_short_regnal_number = "CHARACTER_SHORT_NAME_PREFIX_NUMBER_NAME_SUFFIX" # to make 'II Osman' instead of default 'Osman II'
+	character_name_order = "CHARACTER_NAME_ORDER_TURKISH"
+
+
+	dialects = {
+		turkish_dialect = {}
+		turkmen_dialect = {	
+			male_names = {
+				Aly Aman Atajan Azat 
+				Basim Batyr Baymuhammet Begenc Berdi Berdimyrat 
+				Dayanc Deniz name_didar Dowlet Dowran Durdy 
+				Eymir Eziz Ezizjan 
+				Gadyr Gapbar Gurban Gurbanguly Gurbanmyrat Gylyc 
+				Hemra 
+				Intizar 
+				name_job name_jonas
+				Kadyr name_karim Kasym Kurban 
+				name_mahdi Maksat Mekan Merdan Mergen Meylis Murgen Myrat 
+				Nadyr Nasyr name_nazar Nedir Nepes Nurik Nurmyrat Nury 
+				Oraz Orazgeldi Owez 
+				Parahat 
+				Rahat Rahym Rasit Rowsen name_ruslan 
+				Sadyk name_salomon Salyh Sapar Saparmyrat Saylaw Serdar Sirli Sohbet Soyeg 
+				Tagan Torgay 
+				Wepa 
+				Yagmyr Yhlas Yusup Yyldyrym
+			}
+			female_names = {
+				Abadan Akgyz Akja Aknur Annagul Ayjan Aynabat Aynagozel 
+				Bahargul 
+				Cynar 
+				Deniz name_didar Dildara Dileg Dilfuza Doyduk name_dunya Dzhamilya 
+				Gowher Gozel Gulalek Gulya Gunca 
+				Hatja Hesel Humay Hurma Huyri 
+				Intizar 
+				name_jahan Jahanay Jemal Jennet Julyen 
+				Keyik 
+				name_laleh 
+				Mahri Mahym Mayabibi name_maysa Merjen Miwe 
+				name_nafisa Nartach Nurgozel Nyazik 
+				Ogulgerek Orazgul Owadan Owlak 
+				Patma 
+				Rabyga Rahat Reyhan Ryzwan 
+				Sacly Sadap Saher Saryya Seker Selbi Semsat name_sophia Sona Sulgun 
+				Tawus Tazegul Toty Tylla Tyllagozel 
+				Yildyz Yupek 
+				name_zahida Zohre Zyba Zybagozel
+			}
+			dynasty_names = {
+				Bayandur Begdili Chowdur Ersari Kayi Qiniq Teke Yiwa 
+			}
+			lowborn = {
+				Kul
+			}
+		}
+		azeri_dialect = {
+			male_names = {
+				Abid Aebulfaez Aedalaet Aehaed Aehmaed Aelaaeddin Aelaekbar Aeli Aelif Aelirza Aemir Aemiraslan Aenvaer Aesaed Aesgaer Aesraef Aezim Aeziz Afiq Aftandil Agbala Akif Allahverdi Allahyar Almaz Amil Anar Artogrul Aslan Ayxan Azad 
+				Baba Babaek Baehruz Baesir Baextiyar Bughaj 
+				Caebrayil Caefaer Caelal Caemil Caemsid Caesur Canpolad Cavad Cavansir Cavid Ceyhun Ceykob Cibril Cingiz Conatan Corc Cosqun 
+				Dadas Davud Dzhalal 
+				Elbrus Elcin Eldaeniz Eldar Elkhan Elnur Elsad Elsaen Elshad Elvin Elxan Elyar Eyyub 
+				Faerhad Faerid Faerman Faexraeddin Faexri Faiq Farkhad Fazil Fikraet Firidun Firudin 
+				Gasim Gunay 
+				Hacibala Haebib Haesaen Heydaer Hicran Hikmaet Huseyn 
+				Ibish Ildirim Ilham Ilkin Ilqar Iltimas Iman Inayaet Iqnati name_iris Isfaendiyar Isgaendaer Islam Ismayil Istfan 
+				Jeyhun name_job
+				Kaemal Kaenan Kaerim Kamran Kazim 
+				Maecid Maehaebbaet Maehaemmaed Maelaek Maelik Maemmaed Maerdan Maesud Masallah Mayis Mehman Mikayil Mirali name_mirza Movlan name_mubariz Muraz Muslum Muxtar 
+				Naebi Naeriman Naesib Namiq Natiq Nazim Nicat Nizami 
+				Omaer Orxan 
+				Paehlivan Paenah Paerviz Polad 
+				Qaehraeman Qaelbinur Qaezaenfaer Qafur Qalib Qara Qorxmaz Qudraet Qulam Qulu Qurban 
+				Raehim Raesaed Raesid Raesul Rafiq Ramil Ramin Ramiz Rasim Rizvan Rovsaen Rufaet name_ruslan Rustaem Rza 
+				name_shabah Sabir Sabit Saefa Saefaer Saehaer Saehriyar Saemaed Saemaendaer Saemsi Saerdar Saervaer name_sahar Sahbaz Sahil Samil Seymur Shamil name_sherali Sokrat name_subhan Sufyan Sukur 
+				Taebriz Taerlan Tagi name_tahir Taleh Taran Tariyel Tofiq Toghrul Tural Turan 
+				Ulduz Ulvi Usub Uzeyir 
+				Vaefa Vaeli Vagif Vahid Vaqif Vugar Vuqar Vusal 
+				Xaelil Xaeyal Xariton Xvica 
+				Yagub Yaqubun Yeremya Yunis Yusae Yusif 
+				Zaelimxan Zaerdust Zakir Zaur Zelimhan Zeynalabdin Zohrab
+			}
+			female_names = {
+				name_amina Aezizae Afaet Aise Ajabnaz Akasma Almaz Arifae Artemida Arzu Aybaeniz Aygul Aygun Aylin Aynur Aynurae Aysel Aytaen Aytaj Azadae 
+				Bacigul Bacinur Badamgul Baehaer Baestae Baesti Bagca Balaca Balaxanim name_bali Balsari Banovsha Billurae Bilqeys Bircae Bircaecicaek Busaegul 
+				Caelaliyyae Caemaengul Caemilae Canalae Canbaci Cesmae Ceyran Cicaek 
+				Daefnae Daerya Dilaek Dilarae Dilbaer Dinarae name_dunya Durna 
+				Elmira Elnara Esmira 
+				Faeraeh Faeranaek Faeridae Fatimae Fidan Firuza 
+				Gozael Gulara Gulcohrae Gulnar Gulnarae Gulsaen Gulya Gulzar Gumru Gunaes Gunay Gunel 
+				Haecaer Haelimae Haeqiqaet Haevva Hicran 
+				Ilahae Ilhamae Ilqarae Iman Inarae Inayaet Iradae name_iris 
+				Jalae 
+				Kaemalae Kaerima Khanim Kifayaet Konul Kovsaer 
+				Laeman Laetif Laetifae 
+				Maedina Maehaebbaet Maelaek Maelahaet Maeryaem Maerziyyae Maetanaet Mahirae name_mansura Maral Marqaret Marqarita Mayis Mehparae Mehriban Mirvarid Moruq 
+				Naergiz Naermin Naerminae Naesibae Naezaekaet Nailae 
+				Nataevan Nigar 
+				Ofeliya 
+				Paervanae Paervin Pakiza Parla 
+				Qaemaer Qalina Qumru 
+				Raehilae Raexsaendae Rafiqae Rovshana Rubabae 
+				name_shabah Saeadaet Saebinae Saebnaem Saedaqaet Saefa Saefurae Saehaer Saehla Saeidae Saekina Saelalae Saemayae name_sahar name_samira Sarila Sevda Sevinc Sippora Sofiya Solmaz 
+				Taehminae Taeranae Tahirae Tamam Tunzalae Turan 
+				Ulduz Ulviyyae 
+				Vaefa Validae Vusalae Xaedicae 
+				Xalidae Xanim Xatirae 
+				Yazgul Yeganae 
+				Zaehra Zaeminae Zaerifae Zaernigar Zahirae Zalikae Zalxa Zemfira Zenobiya Zeybae Zeynaeb Zohrae Zuleykha Zuleyxa Zulfiyyae Zumrud
+			}
+			dynasty_names = {
+				Ayrum Afshar Bayat Qaradaghi Qarapapaq Terekeme Qajar
+			}
+			lowborn = {
+				Gul_azeri
+			}
+		}
+	}
+
+}

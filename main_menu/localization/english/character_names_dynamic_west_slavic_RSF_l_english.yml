@@ -1,0 +1,158 @@
+﻿l_english:
+ # valid formats:
+ # name_NAME
+ # name_NAME.[culture]
+ # name_NAME.[language]
+ # name_NAME.[language].[culture]
+ # name_NAME.diminutive
+ # name_NAME.genitive
+ # name_NAME.[culture].diminutive
+ # name_NAME.[culture].genitive
+ # name_NAME.[language].diminutive
+ # name_NAME.[language].genitive
+ # name_NAME.[language].[culture].diminutive
+ # name_NAME.[language].[culture].genitive
+ #
+ # diminutive is used when a character has no dynasty
+ # genitive is used when a patronym, e.g. as in Irish usage
+ #
+ # you can also join compound names like this so they can have a unique form in some languages:
+ # name_michael.name_angel.north_italian_language: "Michelangelo"
+
+
+ # name_albert: "Albert"
+ name_albert.czechslovak_language: "Vojtěch"
+ name_albert.slovak_dialect: "Vojtech"
+ name_albert.west_slavic_language: "Wojciech"
+
+ # name_anthony: "Anthony"
+ name_anthony.slovak_dialect: "Anton"
+
+ # name_andrew: "Andrew"
+ name_andrew.slovak_dialect: "Andrej"
+
+ # name_bohuslav: "Bohuslav"
+ name_bohuslav.west_slavic_language: "Bogusław"
+
+ # name_catherine: "Catherine"
+ name_catherine.slovak_dialect: "Katarína"
+
+ # name_claire: "Claire"
+ name_claire.czechslovak_language: "Klára"
+ 
+ # name_dorothy: "Dorothy"
+ name_dorothy.west_slavic_language: "Dorota"
+
+ # name_elizabeth: "Elizabeth"
+ name_elizabeth.slovak_dialect: "Alžbeta"
+
+ # name_francis: "Francis"
+ name_francis.czechslovak_language: "František"
+
+ # name_george: "George"
+ name_george.slovak_dialect: "Juraj"
+ 
+ # name_gregory: "Gregory"
+ name_gregory.west_slavic_language: "Grzegorz"
+
+ # name_helen: "Helen"
+ name_helen.czechslovak_language: "Helena"
+
+ # name_henry: "Henrik"
+ name_henry.slovak_dialect: "Jano"
+
+ # name_james: "James"
+ name_james.czechslovak_language: "Jakub"
+ name_james.czechslovak_language.diminutive: "Kuba"
+
+ # name_joanna: "Joanna"
+ name_joanna.czechslovak_language: "Jana"
+ name_joanna.czechslovak_language.alternative: "Ivana"
+
+ # name_john: "Johan"
+ name_john.slovak_dialect: "Ján"
+ name_john.slovak_dialect.diminutive: "Jano"
+
+ # name_joseph: "Joseph"
+ name_joseph.czechslovak_language: "Josef"
+ name_joseph.slovak_dialect: "Jozef"
+
+ # name_judith: "Judith"
+ name_judith.slovak_dialect: "Judita"
+
+ # name_lucia: "Lucia"
+ name_lucia.czechslovak_language: "Lucie"
+ name_lucia.slovak_dialect: "Lucia"
+ 
+ # name_mark: "Mark"
+ name_mark.czechslovak_language: "Marek"
+ name_mark.west_slavic_language: "Marek"
+
+ # name_martha: "Martha"
+ name_martha.czechslovak_language: "Marta"
+
+ # name_matthew: "Matthew"
+ name_matthew.slovak_dialect: "Matej"
+
+ # name_methodius: "Methodius"
+ name_methodius.slovak_dialect: "Metod"
+
+ # name_michael: "Michael"
+ name_michael.czechslovak_language: "Michal"
+
+ # name_monica: "Monica"
+ name_monica.czechslovak_language: "Monika"
+
+ # name_paul: "Paul"
+ name_paul.czechslovak_language: "Pavel"
+ name_paul.slovak_dialect: "Pavol"
+
+ # name_paula: "Paula"
+ name_paula.czechslovak_language: "Pavla"
+
+ # name_peter: "Peter"
+ name_peter.czechslovak_language: "Petr"
+ name_peter.slovak_dialect: "Peter"
+
+ # name_radoslav: "Radoslav"
+ name_radoslav.west_slavic_language: "Radosław"
+ 
+ # name_stephen: "Stefan"
+ name_stephen.west_slavic_language: "Stefan"
+ name_stephen.west_slavic_language.alternative: "Szczepan"
+
+ # name_thaddeus: "Thaddeus"
+ name_thaddeus.west_slavic_language: "Tadeusz"
+
+ # name_veronica: "Veronica"
+ name_veronica.czechslovak_language: "Veronika"
+
+ # name_vitazoslav: "Vitazoslav"
+ name_vitazoslav.czechslovak_language: "Vítězslav"
+ name_vitazoslav.slovak_dialect: "Víťazoslav"
+
+ # name_vitus: "Vitus"
+ name_vitus.czechslovak_language: "Vít"
+
+ # name_waldemar: "Waldemar"
+ name_waldemar.czechslovak_language: "Vladimír"
+
+ # name_yvonne: "Yvonne"
+ name_yvonne.czechslovak_language: "Iveta"
+ 
+
+
+ Dobieslaw: "Dobiesław"
+ Mieczyslaw: "Mieczysław"
+ Slawomir: "Sławomir"
+ Witold: "Witold"
+
+ Aldona: "Aldona"
+ Michalina: "Michalina"
+
+ name_zdenek: "Zdenek"
+ name_zdenek.czechslovak_language: "Zdeněk"
+ name_zdenek.slovak_dialect: "Zdenek"
+
+ Vladimira: "Vladimíra"
+ Romana: "Romana"

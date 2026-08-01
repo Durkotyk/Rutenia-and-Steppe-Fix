@@ -1,0 +1,7 @@
+﻿l_english:
+
+ russkaya_pravda_policy_russian: "Russkaya Pravda"
+ russkaya_pravda_policy_belarusian: "Ruskaja Praŭda"
+ russkaya_pravda_policy_ukrainian: "Pravda Ruska"
+ the_rus_justice_policy: "The Rus Justice" 
+ russkaya_pravda_policy: "[Custom('GetRusJustice')]"

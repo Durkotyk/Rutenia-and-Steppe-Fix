@@ -1,0 +1,3741 @@
+﻿# Expanded Granaries for Kyiv and Ruthenia
+
+namespace = flavor_lit
+flavor_lit.1 = {
+	type = country_event
+	title = flavor_lit.1.title
+	desc = flavor_lit.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1550.1.1
+		to = 1600.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		"religion_percentage_in_country(religion:lutheran)" > 0
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ordered_owned_location = {
+			limit = {
+				NOT = { has_building = building_type:lutheran_preachers }
+			}
+
+			order_by = population
+
+			max = {
+				value = 1
+				add = {
+					value = num_locations
+					divide = 5
+				}
+			}
+			every_pop = {
+				limit = {
+					NOT = { religion = religion:lutheran }
+					religion.group = religion_group:christian
+				}
+				split_pop = {
+					fraction = 0.10
+					religion = religion:lutheran
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.1.a
+		historical_option = yes
+
+		custom_tooltip = many_pops_will_become_lutheran_in_christian_locations_tt
+
+		custom_tooltip = {
+			text = lutheran_pops_gain_25_satisfaction
+			every_owned_location = {
+				limit = {
+					any_pop = {
+						owner = root
+						religion = religion:lutheran
+					}
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:lutheran
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_bonus
+				}
+			}
+		}
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_huge_move_to_right
+		}
+		add_government_power = government_power_extreme_penalty
+		add_religious_influence_if_valid = { VALUE = religious_influence_extreme_penalty }
+	}
+	option = {
+		name = flavor_lit.1.b
+		custom_tooltip = many_pops_will_become_lutheran_in_christian_locations_tt
+
+		custom_tooltip = {
+			text = lutheran_pops_lose_33_satisfaction
+			every_owned_location = {
+				limit = {
+					any_pop = {
+						owner = root
+						religion = religion:lutheran
+					}
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:lutheran
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+			}
+		}
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_huge_move_to_left
+		}
+		add_government_power = government_power_extreme_bonus
+		add_religious_influence_if_valid = { VALUE = religious_influence_weak_bonus }
+	}
+}
+
+flavor_lit.2 = {
+	type = country_event
+	title = flavor_lit.2.title
+	desc = flavor_lit.2.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1590.1.1
+		to = 1610.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		religion:calvinist = { is_religion_enabled = yes}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ordered_owned_location = {
+			limit = {
+				NOT = { dominant_religion = religion:calvinist }
+			}
+
+			order_by = population
+
+			max = {
+				value = 1
+				add = {
+					value = num_locations
+					divide = 5
+				}
+			}
+
+			every_pop = {
+				limit = {
+					NOT = { religion = religion:calvinist }
+					religion.group = religion_group:christian
+				}
+				split_pop = {
+					fraction = 0.10
+					religion = religion:calvinist
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.2.a
+		historical_option = yes
+
+		custom_tooltip = many_pops_will_become_calvinist_in_christian_locations_tt
+
+		custom_tooltip = {
+			text = calvinist_pops_gain_25_satisfaction
+			every_owned_location = {
+				limit = {
+					any_pop = {
+						owner = root
+						religion = religion:calvinist
+					}
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:calvinist
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_bonus
+				}
+			}
+		}
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_huge_move_to_right
+		}
+		add_government_power = government_power_extreme_penalty
+		add_religious_influence_if_valid = { VALUE = religious_influence_extreme_penalty }
+	}
+	option = {
+		name = flavor_lit.2.b
+		custom_tooltip = many_pops_will_become_calvinist_in_christian_locations_tt
+
+		custom_tooltip = {
+			text = calvinist_pops_lose_33_satisfaction
+			every_owned_location = {
+				limit = {
+					any_pop = {
+						owner = root
+						religion = religion:calvinist
+					}
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						religion = religion:calvinist
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+			}
+		}
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_huge_move_to_left
+		}
+		add_government_power = government_power_extreme_bonus
+		add_religious_influence_if_valid = { VALUE = religious_influence_weak_bonus }
+	}
+}
+
+# Treaty of Svitrigaila
+flavor_lit.3 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = flavor_lit.3.title
+	desc = flavor_lit.3.desc
+	outcome = neutral
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		scope:target_root_country.capital = { save_scope_as = target_location }
+
+		scope:target_root_country.ruler = { save_scope_as = target_character }
+
+		save_scope_as = sender
+
+	}
+
+	option = {
+		historical_option = yes
+		name = flavor_lit.3.a
+
+		set_variable = { name = treaty_of_ugra value = 1 }
+
+		add_trust_equilibrium = {
+			modifier = trust_treaty_of_ugra
+			target = scope:target_root_country
+		}
+
+		create_relation = {
+			first = this
+			second = scope:target_root_country
+			type = relation_type:alliance
+		}
+
+		custom_tooltip = {
+			text = smolensk_owned_by_muscovy_tt
+			area:smolensk_area = {
+				every_location_in_area = {
+					limit = {
+						top_owner = scope:target_root_country
+					}
+					remove_core = this.owner
+					change_location_owner = root
+					add_core = root
+				}
+			}
+		}
+
+		scope:target_root_country = { trigger_event_silently = { id = flavor_mos.25 days = 0 } }
+
+	}
+
+	option = {
+		name = flavor_lit.3.b
+
+		set_variable = { name = treaty_of_ugra_declined value = 1 }
+
+		scope:target_root_country = {
+			remove_trust_equilibrium = {
+				modifier = trust_treaty_of_ugra
+				target = root
+			}
+		}
+
+		scope:target_root_country = { trigger_event_silently = { id = flavor_mos.26 days = 0 } }
+
+	}
+
+	historical_info = flavor_mos.23.historical_info
+
+}
+
+# The Ill-Treated Progeny
+flavor_lit.4 = {
+	type = country_event
+	title = flavor_lit.4.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_variable = threatened_with_invasion
+						has_variable = severed_ties
+					}
+				}
+				desc = flavor_lit.4.desc_severed_ties
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = flavor_lit.4.desc_opted_for_divorce
+			}
+		}
+	}
+	outcome = neutral
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+
+		scope:target_root_country = {
+			capital = {
+				save_scope_as = target_location
+			}
+			scope:target_character = {
+				save_scope_as = target_character
+			}
+		}
+
+	}
+
+	option = {
+		name = flavor_lit.4.a
+		trigger = {
+			has_variable = threatened_with_invasion
+		}
+
+		add_opinion = {
+			target = scope:target_root_country
+			modifier = opinion_threatened_us
+		}
+
+		custom_tooltip = flavor_lit.4.tt1
+
+	}
+
+	option = {
+		name = flavor_lit.4.b
+		trigger = {
+			has_variable = severed_ties
+		}
+
+		add_opinion = {
+			target = scope:target_root_country
+			modifier = opinion_insulted
+		}
+
+	}
+
+	option = {
+		name = flavor_lit.4.c
+		trigger = {
+			has_variable = opted_for_divorce
+		}
+
+		add_opinion = {
+			target = scope:target_root_country
+			modifier = opinion_pleased
+		}
+
+		custom_tooltip = flavor_lit.4.tt2
+
+	}
+
+	historical_info = flavor_mos.40.historical_info
+
+}
+
+# Marriage to Poland
+flavor_lit.5 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = flavor_lit.5.title
+	desc = flavor_lit.5.desc
+	outcome = neutral
+	historical_info = flavor_lit.5.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1370.1.1
+		to = 1530.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		religion = religion:catholic
+		has_ruler = yes
+		ruler = { has_available_marriage_slot = yes }
+		is_subject = no
+		at_war = no
+		c:POL = {
+			has_ruler = yes
+			ruler = {
+				OR = {
+					any_child = {
+						is_alive = yes
+						is_adult = yes
+						has_available_marriage_slot = yes
+						NOT = { is_same_gender = c:LIT.ruler }
+						NOT = { is_close_relative = c:LIT.ruler }
+						modifier:blocked_from_marriage = no
+						NOT = {
+							c:LIT.ruler = {
+								is_same_gender = PREV
+							}
+						}
+					}
+					character_age >= 32
+				}
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		ruler = {
+			save_scope_as = target_character
+		}
+		c:POL = {
+			ruler = {
+				save_scope_as = target_character2
+				if = {
+					limit = {
+						any_child = {
+							is_alive = yes
+							is_adult = yes
+							has_available_marriage_slot = yes
+							NOT = { is_same_gender = c:LIT.ruler }
+							NOT = { is_close_relative = c:LIT.ruler }
+							modifier:blocked_from_marriage = no
+							NOT = {
+								root.ruler = {
+									is_same_gender = PREV
+								}
+							}
+						}
+					}
+					random_child = {
+						limit = {
+							is_alive = yes
+							is_adult = yes
+							has_available_marriage_slot = yes
+							NOT = { is_same_gender = c:LIT.ruler }
+							NOT = { is_close_relative = c:LIT.ruler }
+							modifier:blocked_from_marriage = no
+							NOT = {
+								root.ruler = {
+									is_same_gender = PREV
+								}
+							}
+						}
+						save_scope_as = target_character3
+					}
+				}
+				else = {
+					prev = {
+						if = {
+							limit = {
+								root.ruler = {
+									is_female = no
+								}
+							}
+							create_character = {
+								estate = estate_type:nobles_estate
+								dynasty = ruler.dynasty
+								father = scope:target_character2
+								female = yes
+								age = 16
+								save_scope_as = target_character3
+							}
+						}
+						else = {
+							create_character = {
+								estate = estate_type:nobles_estate
+								dynasty = ruler.dynasty
+								father = scope:target_character2
+								female = no
+								age = 16
+								save_scope_as = target_character3
+							}
+						}
+					}
+				}
+			}
+		}
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.5.a
+
+		historical_option = yes
+
+		add_government_power = government_power_extreme_bonus
+
+		hidden_effect = {
+			set_variable = accepted_marriage_variable
+		}
+		custom_tooltip = lit_should_poland_accept_tt
+	}
+
+	option = {
+		name = flavor_lit.5.b
+
+		add_government_power = government_power_extreme_penalty
+		c:POL = {
+			add_casus_belli = {
+				target = ROOT
+				type = casus_belli:cb_claim_throne
+			}
+		}
+	}
+
+	after = {
+		c:POL = { trigger_event_non_silently = flavor_lit.11 }
+	}
+}
+
+flavor_lit.6 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = flavor_lit.6.title
+	desc = flavor_lit.6.desc
+	outcome = neutral
+	historical_info = flavor_lit.6.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1340.1.1
+		to = 1355.1.1
+		monthly_chance = 2
+	}
+
+	trigger = {
+		at_war = no
+		is_subject = no
+		NOT = { religion.group = religion_group:christian }
+		country_exists = c:PAP
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:nobles_estate }
+		ruler_or_regent ?= { save_scope_as = target_character1 }
+		c:PAP = { ruler_or_regent ?= { save_scope_as = target_character2 } }
+	}
+
+	option = {
+		name = flavor_lit.6.a
+
+		historical_option = yes
+		add_government_power = government_power_extreme_penalty
+		hidden_effect = {
+			set_variable = {
+				name = lit_pretending_to_convert_variable
+				years = 80
+			}
+		}
+
+	}
+
+	option = {
+		name = flavor_lit.6.b
+
+		add_government_power = government_power_extreme_penalty
+		add_stability = stability_mild_penalty
+		hidden_effect = {
+			set_variable = {
+				name = lit_genuine_conversion
+				years = 80
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.6.c
+
+		trigger = {
+			NOT = { religion = religion:catholic }
+		}
+		hidden_effect = {
+			set_variable = {
+				name = lit_stayed_pagan_variable
+				years = 80
+			}
+		}
+		custom_tooltip = {
+			text = neighbor_catholics_lose_opinion_tt
+			every_neighbor_country = {
+				limit = {
+					religion = religion:catholic
+				}
+				add_opinion = {
+					target = root
+					modifier = religious_friction_modifier
+				}
+			}
+		}
+	}
+
+	after = {
+		c:PAP = { trigger_event_non_silently = flavor_lit.7 }
+	}
+}
+
+flavor_lit.7 = {	#Pope Informed about Conversion - Legitimate or Otherwise
+	type = country_event
+
+	title = flavor_lit.7.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					c:LIT = { has_variable = lit_stayed_pagan_variable }
+				}
+				desc = flavor_lit.7.desc.a
+			}
+			triggered_desc = {
+				desc = flavor_lit.7.desc.b
+			}
+		}
+	}
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.7.a
+
+		custom_tooltip = lit_conversion.7_tt
+	}
+}
+
+flavor_lit.8 = {
+	type = country_event
+
+	title = flavor_lit.8.title
+	desc = flavor_lit.8.desc
+	outcome = neutral
+	historical_info = flavor_lit.8.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1370.1.1
+		to = 1400.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		OR = {
+			NOT = { religion.group = religion_group:christian }
+			AND = {
+				religion.group = religion_group:christian
+				NOT = { religion = religion:catholic }
+			}
+		}
+		OR = {
+			custom_tooltip = {
+				text = variable_lit_pretending_to_convert_variable_tt
+			has_variable = lit_pretending_to_convert_variable
+			}
+			custom_tooltip = {
+				text = variable_lit_genuine_conversion_tt
+			has_variable = lit_genuine_conversion
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_lit.8.a
+		historical_option = yes
+
+		change_religion = religion:catholic
+		change_religion_for_ruler_and_family = { country = ROOT religion = religion:catholic }
+		custom_tooltip = {
+			text = ruler_and_children_convert_to_catholicism_tt
+			scope:target_character = {
+				change_character_religion = religion:catholic
+				every_child = {
+					change_character_religion = religion:catholic
+				}
+			}
+		}
+		custom_tooltip = {
+			text = neighbor_catholics_receive_opinion_tt
+			every_neighbor_country = {
+				limit = {
+					religion = religion:catholic
+				}
+				add_opinion = {
+					target = root
+					modifier = recently_embraced_catholicism
+				}
+			}
+		}
+
+		add_country_modifier = {
+			modifier = lit_conversion_efforts_modifier
+			years = 50
+			mode = add_and_extend
+		}
+		if = {
+			limit = { has_variable = lit_pretending_to_convert_variable }
+			add_government_power = government_power_ultimate_penalty
+			add_stability = stability_extreme_penalty
+		}
+		custom_tooltip = {
+			text = enable_conversion_to_catholicism_tt
+			set_variable = lit_enable_conversion_to_catholicism_variable
+		}
+	}
+
+	option = {	#Leg it
+		name = flavor_lit.8.b
+
+		trigger = {
+			has_variable = lit_pretending_to_convert_variable
+		}
+		if = {
+			limit = {
+				any_neighbor_country = {
+					religion = religion:catholic
+					OR = {
+						AND = {
+							relative_strength = {
+								target = root
+								value >= 0.5
+							}
+							NOT = {
+								has_mutual_scripted_relation = {
+									type = relation_type:alliance
+									target = root
+								}
+							}
+							is_subject = no
+						}
+						has_truce_with = root
+						is_enemy_of = root
+						is_rival_of = root
+					}
+				}
+			}
+			custom_tooltip = {
+				text = every_neighbor_catholic_gets_heresy_cb_tt
+				every_neighbor_country = {
+					limit = {
+						religion = religion:catholic
+						OR = {
+							AND = {
+								relative_strength = {
+									target = root
+									value >= 0.5
+								}
+								NOT = {
+									has_mutual_scripted_relation = {
+										type = relation_type:alliance
+										target = root
+									}
+								}
+								is_subject = no
+							}
+							has_truce_with = root
+							is_enemy_of = root
+							is_rival_of = root
+						}
+					}
+					trigger_event_non_silently = flavor_lit.9
+				}
+			}
+		}
+
+		#c:PAP = { set_variable = lit_refused_conversion }
+	}
+}
+
+flavor_lit.9 = {
+	type = country_event
+
+	title = flavor_lit.9.title
+	desc = flavor_lit.9.desc
+	outcome = neutral
+
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = flavor_lit.9.a
+
+		add_casus_belli = {
+			target = c:LIT
+			type = casus_belli:cb_crusade
+		}
+	}
+}
+
+flavor_lit.10 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = flavor_lit.10.title
+	desc = flavor_lit.10.desc
+	outcome = neutral
+	historical_info = flavor_lit.10.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1355.1.1
+		to = 1365.1.1
+		monthly_chance = 3
+	}
+
+	trigger = {
+		c:LIT = {
+			custom_tooltip = {
+				text = variable_lit_pretending_to_convert_variable_tt
+			has_variable = lit_pretending_to_convert_variable
+			}
+			custom_tooltip = {
+				text = variable_lit_enable_conversion_to_catholicism_variable_tt
+			NOT = { has_variable = lit_enable_conversion_to_catholicism_variable }
+			}
+			NOT = { religion.group = religion_group:christian }
+			at_war = no
+			is_subject = no
+			has_ruler = yes
+			ruler = {
+				has_available_marriage_slot = yes
+				modifier:blocked_from_marriage = no
+			}
+		}
+		c:MOS = {
+			NOR = {
+				is_enemy_of = root
+				is_rival_of = root
+			}
+			is_subject = no
+			at_war = no
+			ruler_or_regent = {
+				any_child = {
+					is_alive = yes
+					is_adult = yes
+					has_available_marriage_slot = yes
+					NOT = { is_same_gender = c:LIT.ruler }
+					NOT = { is_close_relative = c:LIT.ruler }
+					modifier:blocked_from_marriage = no
+				}
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler = {
+			save_scope_as = target_character1
+		}
+		c:MOS = {
+			ruler = {
+				save_scope_as = target_character2
+				random_child = {
+					limit = {
+						is_alive = yes
+						is_adult = yes
+						has_available_marriage_slot = yes
+						NOT = { is_same_gender = c:LIT.ruler }
+						NOT = { is_close_relative = c:LIT.ruler }
+						modifier:blocked_from_marriage = no
+					}
+					save_scope_as = target_character4
+				}
+			}
+		}
+		if = {
+			limit = {
+				ruler.mother = {
+					is_alive = yes
+					owner = root
+				}
+			}
+			ruler.mother = { save_scope_as = target_character3 }
+		}
+	}
+
+	option = {
+		name = flavor_lit.10.a
+
+		historical_option = yes
+
+		add_government_power = government_power_extreme_penalty
+		if = {
+			limit = {
+				exists = scope:target_character3
+			}
+			custom_tooltip = target_character3_is_scorned_tt
+		}
+	}
+
+	option = {
+		name = flavor_lit.10.b
+
+		c:MOS = {
+			trigger_event_non_silently = flavor_lit.13
+		}
+	}
+}
+
+flavor_lit.11 = {
+	type = country_event
+
+	title = flavor_lit.11.title
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					c:LIT = {
+						has_variable = accepted_marriage_variable
+					}
+				}
+				desc = flavor_lit.11.desc.a
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = flavor_lit.11.desc.b
+			}
+		}
+	}
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:POL.capital = { save_scope_as = target_location }
+		c:LIT.capital = { save_scope_as = target_location2 }
+	}
+
+	option = {
+		name = flavor_lit.11.a
+
+		historical_option = yes
+
+		trigger = {
+			c:LIT = {
+				has_variable = accepted_marriage_variable
+			}
+		}
+
+		if = {
+			limit = {
+				is_enemy_of = c:LIT
+			}
+			c:LIT = { remove_rival = root }
+		}
+		if = {
+			limit = {
+				c:LIT = { is_rival_of = root }
+			}
+			remove_rival = c:LIT
+		}
+
+		scope:target_character = {
+			marry_character = scope:target_character3
+		}
+		add_opinion_mutual_effect = {
+			modifier = opinion_dynastic_ties
+			target = c:LIT
+		}
+		custom_tooltip = may_lead_to_peaceful_union
+
+		c:LIT = {
+			hidden_effect = {
+				remove_variable = accepted_marriage_variable
+			}
+			trigger_event_non_silently = flavor_lit.12
+
+			trigger_event_non_silently = {
+				id = flavor_lit.17
+				months = { 2 6 }
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.11.b
+
+		if = {
+			limit = { 
+				c:POL = {
+					NOT = {
+						has_casus_belli_of_type_on = { 
+							type = casus_belli:cb_claim_throne 
+							target = c:LIT 
+						}
+					}
+				}
+			}
+			c:POL = {
+				add_casus_belli = {
+					target = c:LIT
+					type = casus_belli:cb_claim_throne
+				}
+			}
+		}
+		else = {
+			show_as_tooltip = {
+				c:POL = {
+					add_casus_belli = {
+						target = c:LIT
+						type = casus_belli:cb_claim_throne
+					}
+				}
+			}
+		}
+	}
+}
+
+flavor_lit.12 = {
+	type = country_event
+
+	title = flavor_lit.12.title
+	desc = flavor_lit.12.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = happy
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.12.a
+
+		show_as_tooltip = {
+			scope:target_character = {
+				marry_character = scope:target_character3
+			}
+			add_opinion_mutual_effect = {
+				modifier = opinion_dynastic_ties
+				target = c:POL
+			}
+		}
+	}
+}
+
+flavor_lit.13 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = flavor_lit.11.title
+	desc = flavor_lit.13.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:LIT = {
+			ruler_or_regent = { save_scope_as = target_character }
+		}
+		ruler_or_regent = {
+			save_scope_as = target_character2
+			random_child = {
+				limit = {
+					is_alive = yes
+					is_adult = yes
+					has_available_marriage_slot = yes
+					NOT = { is_same_gender = c:LIT.ruler }
+					NOT = { is_close_relative = c:LIT.ruler }
+					modifier:blocked_from_marriage = no
+				}
+				save_scope_as = target_character3
+			}
+		}
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.13.a
+
+		hidden_effect = {
+			set_variable = {
+				name = accepted_mos_marriage_offer_variable
+				years = 2
+			}
+		}
+
+		show_as_tooltip = {
+			scope:target_character = {
+				marry_character = scope:target_character3
+			}
+			add_opinion_mutual_effect = {
+				modifier = opinion_dynastic_ties
+				target = c:LIT
+			}
+			custom_tooltip = may_lead_to_peaceful_union
+		}
+
+		c:LIT = {
+			trigger_event_non_silently = flavor_lit.14
+		}
+	}
+
+	option = {
+		name = flavor_lit.13.b
+
+	}
+}
+
+flavor_lit.14 = {
+	type = country_event
+
+	title = flavor_lit.14.title
+	desc = flavor_lit.14.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.14.a
+
+		trigger = {
+			c:MOS = { has_variable = accepted_mos_marriage_offer_variable }
+		}
+
+		scope:target_character = {
+			marry_character = scope:target_character3
+		}
+		add_opinion_mutual_effect = {
+			modifier = opinion_dynastic_ties
+			target = c:LIT
+		}
+	}
+
+	option = {
+		name = flavor_lit.14.b
+
+		add_government_power = government_power_ultimate_penalty
+	}
+}
+
+flavor_lit.15 = {
+	hide_portraits = yes
+	type = country_event
+
+	title = flavor_lit.15.title
+	desc = flavor_lit.15.desc
+	outcome = neutral
+	historical_info = flavor_lit.15.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1340.1.1
+		to = 1360.1.1
+		monthly_chance = 1
+	}
+
+	trigger = {
+		at_war = no
+		is_subject = no
+		is_during_bankruptcy = no
+		country_exists = c:MOS
+		religion:orthodox = {
+			any_country_in_religion = {
+				NOT = { this = c:MOS }
+				is_subject = no
+				has_presence_in = region:russian_region
+				NOT = {
+					has_mutual_scripted_relation = {
+						type = relation_type:alliance
+						target = c:MOS
+					}
+				}
+				NOT = { country_type = pop }
+				NOT = { country_type = building }
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		save_scope_as = target_country
+		ruler_or_regent = { save_scope_as = target_character }
+		religion:orthodox = {
+			ordered_country_in_religion = {
+				limit = {
+					NOT = { this = c:MOS }
+					is_subject = no
+					has_presence_in = region:russian_region
+				}
+				order_by = total_population
+				position = 1
+				check_range_bounds = no
+				save_scope_as = target_country1
+				ruler_or_regent = { save_scope_as = target_character1 }
+			}
+			ordered_country_in_religion = {
+				limit = {
+					NOT = { this = c:MOS }
+					is_subject = no
+					has_presence_in = region:russian_region
+				}
+				order_by = total_population
+				position = 2
+				check_range_bounds = no
+				save_scope_as = target_country2
+				ruler_or_regent = { save_scope_as = target_character2 }
+			}
+			ordered_country_in_religion = {
+				limit = {
+					NOT = { this = c:MOS }
+					is_subject = no
+					has_presence_in = region:russian_region
+				}
+				order_by = total_population
+				position = 3
+				check_range_bounds = no
+				save_scope_as = target_country3
+				ruler_or_regent = { save_scope_as = target_character3 }
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.15.a
+
+		historical_option = yes
+
+		trigger = {
+			exists = scope:target_country1
+			exists = scope:target_country2
+			exists = scope:target_country3
+		}
+
+		add_gold = {
+			value = {
+				add = scope:target_country1.monthly_income_total
+				add = scope:target_country2.monthly_income_total
+				add = scope:target_country3.monthly_income_total
+			}
+			multiply = -5
+		}
+		scope:target_country1 = { trigger_event_non_silently = flavor_lit.16 }
+		scope:target_country2 = { trigger_event_non_silently = flavor_lit.16 }
+		scope:target_country3 = { trigger_event_non_silently = flavor_lit.16 }
+	}
+
+	option = {
+		name = flavor_lit.15.b
+
+		add_gold = {
+			value = scope:target_country1.monthly_income_total
+			multiply = -5
+		}
+
+		scope:target_country1 = { trigger_event_non_silently = flavor_lit.16 }
+	}
+
+	option = {
+		name = flavor_lit.15.c
+
+		if = {
+			limit = {
+				NOT = { religion.group = religion_group:christian }
+			}
+			custom_tooltip = diplomatic_isolation_tt
+		}
+		add_government_power = government_power_extreme_penalty
+	}
+}
+
+flavor_lit.16 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.16.title
+	desc = flavor_lit.16.desc
+	outcome = neutral
+	
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+		capital = { save_scope_as = target_location }
+		c:LIT.ruler_or_regent = { save_scope_as = target_character2 }
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.16.a
+
+		add_opinion_mutual_effect = {
+			modifier = opinion_diplomatic_gifts
+			target = c:LIT
+		}
+
+		change_gold_effect = { scale = 2 }
+	}
+}
+
+
+#Vilnius Cathedral
+flavor_lit.17 = { #https://en.wikipedia.org/wiki/Vilnius_Cathedral
+	type = country_event
+
+	title = flavor_lit.17.title
+	desc = flavor_lit.17.desc
+	outcome = neutral
+	historical_info = muscovite_succession_war.18.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1387.1.1
+		to = 1500.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	trigger = {
+		owns = location:vilnius
+		location:vilnius = {
+			NOT = { has_building = building_type:cathedral }
+			OR = {
+				location_rank = location_rank:town
+				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
+			}
+		}
+		religion = religion:catholic
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = flavor_lit.17.a
+		historical_option = yes
+
+		location:vilnius = {
+			construct_building = {
+				building_type = building_type:cathedral
+				cost_multiplier = 0.90
+				cost_multiplier_reason = "clergy_cheap_sponsorship"
+			}
+		}
+
+		add_prestige = prestige_weak_bonus
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		c:PAP ?= {
+			add_opinion = { target = root modifier = opinion_supportive_monarch }
+		}
+	}
+	option = {
+		name = flavor_lit.17.b
+
+		add_prestige = prestige_weak_penalty
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_weak_penalty }
+		c:PAP ?= {
+			add_opinion = { target = root modifier = opinion_ignorant_monarch }
+		}
+	}
+}
+
+flavor_lit.18 = {#Centralization reforms
+	type = country_event
+	title = flavor_lit.18.title
+	desc = flavor_lit.18.desc
+	outcome = neutral
+	historical_info = flavor_lit.18.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1393.1.1
+		to = 1500.1.1
+		monthly_chance = 5
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	trigger = {
+		NOR = {
+			has_reform = government_reform:patrimonialism
+			is_country_religion_pagan = yes
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent = {
+			save_scope_as = target_character
+		}
+		capital = {
+			save_scope_as = capital_scope
+		}
+	}
+
+	option = {
+		name = flavor_lit.18.a
+		historical_option = yes
+
+		if = {
+			limit = {
+				NOT = { has_policy = civil_law_policy }
+			}
+			add_policy = policy:civil_law_policy
+			add_stability = stability_extreme_penalty
+		}
+		change_societal_value = {
+			type = centralization_vs_decentralization	value = societal_value_large_move_to_left
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+
+	}
+	option = {
+		name = flavor_lit.18.b
+
+		add_stability = stability_mild_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+	}
+}
+
+flavor_lit.19 = {#Fancy New Dishes
+	type = country_event
+	title = flavor_lit.19.title
+	desc = flavor_lit.19.desc
+	outcome = neutral
+	historical_info = flavor_lit.19.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1450.1.1
+		to = 1600.1.1
+		monthly_chance = 5
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	trigger = {
+		NOR = {
+			has_reform = government_reform:patrimonialism
+			is_country_religion_pagan = yes
+		}
+		has_ruler = yes
+		has_consort = yes
+		consort = {
+			birth_location = {
+				OR = {
+					region = region:iberia_region
+					region = region:france_region
+					region = region:italy_region
+				}
+			}
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		consort = {
+			save_scope_as = consort_scope
+			birth_location = {
+				save_scope_as = birth_location_scope
+				owner = {
+					save_scope_as = owner_location
+				}
+			}
+		}
+		capital = {
+			save_scope_as = capital_scope
+		}
+	}
+
+	option = {
+		name = flavor_lit.19.a
+		historical_option = yes
+
+		capital.market = {
+			add_temporary_demand = {
+				type = demand:lit_fancy_new_dishes
+				months = 240
+			}
+		}
+		change_gold_effect = { scale = -2.00 }
+		change_societal_value = {
+			type = outward_vs_inward
+			value = societal_value_move_to_left
+		}
+
+		add_research_progress = research_progress_mild_bonus
+
+		add_prestige = prestige_weak_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+
+	}
+	option = {
+		name = flavor_lit.19.b
+
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_weak_bonus
+
+		change_societal_value = {
+			type = outward_vs_inward
+			value = societal_value_move_to_right
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+
+# Supremus Dux Lithuaniae
+flavor_lit.20 = {
+	type = country_event
+	title = flavor_lit.20.title
+	desc = flavor_lit.20.desc
+	outcome = neutral
+	historical_info = flavor_lit.20.historical_info
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1380.1.1
+		to = 1444.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	trigger = {
+		country_rank_level = 2
+		government_type = government_type:monarchy
+		ruler ?= {
+			OR = {
+				adm >= 75
+				has_trait = righteous
+			}
+		}
+		total_population >= 1200
+	}
+
+	option = {
+		name = flavor_lit.20.a
+
+		historical_option = yes
+
+		add_legitimacy = legitimacy_extreme_penalty
+
+		unlock_government_reform_effect = {
+			type = lit_grand_duchy_of_lithuania_reform
+		}
+	}
+
+	option = {
+		name = flavor_lit.20.b
+
+		add_all_estate_satisfaction = {
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+}
+
+#Radvila Astikas and the founding of the Radziwiłł family
+flavor_lit.21 = {
+	type = country_event
+	title = flavor_lit.21.title
+	desc = flavor_lit.21.desc
+	outcome = neutral
+	historical_info = flavor_lit.21.historical_info
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1415.1.1
+		to = 1450.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		government_type = government_type:monarchy
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		
+		create_character = {
+			estate = estate_type:nobles_estate
+			first_name = name_nicholas
+			dynasty = dynasty:radziwill_dynasty
+			birth_location = location:vilnius
+			birth_date = 1390.4.3 #unknown birth date
+			religion = religion:catholic
+			culture = culture:aukstaitian
+			adm = 75
+			dip = {50 70}
+			mil = {50 70}
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+	}
+
+	option = {
+		name = flavor_lit.21.a
+
+		historical_option = yes
+
+		scope:target_character = {
+			add_character_modifier = {
+				mode = add_and_extend
+				modifier = lit_radvila_as_grand_marshal
+			}
+
+			add_random_trait_from_category = general
+		}
+
+		change_gold_effect = { scale = -2 }
+		scope:target_character = { move_country = root }
+	}
+
+	option = {
+		name = flavor_lit.21.b
+
+		scope:target_character = {
+			add_dip = 15
+		}
+
+		change_gold_effect = { scale = -2 }
+		scope:target_character = { move_country = root }
+	}
+
+	option = {
+		name = flavor_lit.21.c
+
+		add_legitimacy = legitimacy_mild_penalty
+
+		scope:target_character = {
+			banish_character = yes
+		}
+	}
+}
+
+#Goštautai family
+flavor_lit.22 = {
+	type = country_event
+	title = flavor_lit.22.title
+	desc = flavor_lit.22.desc
+	outcome = neutral
+	historical_info = flavor_lit.22.historical_info
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1415.1.1
+		to = 1450.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		government_type = government_type:monarchy
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		
+		create_character = {
+			estate = estate_type:nobles_estate
+			first_name = name_john
+			dynasty = dynasty:gostautai_dynasty
+			birth_location = location:vilnius
+			birth_date = 1390.4.3 #Born roughly in 1390
+			religion = religion:catholic
+			culture = culture:aukstaitian
+			adm = 60
+			dip = 75
+			mil = 60
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+	}
+
+	option = { #Allow the family and their riches to strengthen themselves
+		name = flavor_lit.22.a
+
+		historical_option = yes
+
+		add_gold = { value = monthly_income_total multiply = -2 }
+
+		add_gold_to_estate = {
+			estate_type = estate_type:nobles_estate
+			value = {
+				value = root.monthly_income_total
+				multiply = 2
+			}
+		}
+
+		add_stability = stability_mild_bonus
+		scope:target_character = { move_country = root }
+	}
+
+	option = {
+		name = flavor_lit.22.b
+
+		scope:target_character = {
+			banish_character = yes
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_extreme_penalty
+		}
+	}
+}
+
+#Protection of the Orthodox Faith
+flavor_lit.23 = {
+	type = country_event
+	title = flavor_lit.23.title
+	desc = flavor_lit.23.desc
+	outcome = neutral
+	historical_info = flavor_lit.23.historical_info
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1400.1.1
+		to = 1500.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		religion.group = religion_group:christian
+		religion != religion:orthodox
+		"religion_percentage_in_country(religion:orthodox)" > 0.15
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = { #Grant them rights and unlock privilege
+		name = flavor_lit.23.a
+
+		historical_option = yes
+
+		unlock_estate_privilege_effect = {
+			type = lit_equal_status_of_orthodox_nobility
+		}
+
+		grant_estate_privilege = estate_privilege:lit_equal_status_of_orthodox_nobility
+
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_extreme_penalty
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_extreme_bonus
+		}
+	}
+
+	option = { #Promote the true faith instead
+		name = flavor_lit.23.b
+
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_extreme_bonus
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_extreme_penalty
+		}
+
+		add_religious_influence_if_valid = { VALUE = religious_influence_extreme_penalty }
+	}
+}
+
+#First Church of Lithuania
+flavor_lit.24 = {
+	type = country_event
+	title = flavor_lit.24.title
+	desc = flavor_lit.24.desc
+	outcome = neutral
+	historical_info = flavor_lit.24.historical_info
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1390.1.1
+		to = 1450.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		religion.group = religion_group:christian
+		owns = location:vilnius
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+
+		create_character = {
+			estate = estate_type:burghers_estate
+			culture = culture:danube_bavarian
+			religion = religion:catholic
+			artist = architect
+			artist_skill = {
+				0.65
+				0.75
+			}
+			age = 35
+			save_scope_as = target_character2
+			create_in_limbo = yes
+		}
+
+		location:vilnius = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_lit.24.a
+
+		historical_option = yes
+
+		scope:target_character2 = { move_country = root }
+		scope:target_location = {
+			create_art = {
+				artist = scope:target_character2
+				key = church_of_saint_nicholas
+				quality = 70
+				type = work_of_art_type:monument
+			}
+		}
+
+		change_gold_effect = { scale = -2 }
+	}
+
+	option = {
+		name = flavor_lit.24.b
+
+		add_prestige = prestige_weak_penalty
+		add_religious_influence_if_valid = {
+			VALUE = religious_influence_extreme_penalty
+		}
+		scope:target_character2 = {
+			banish_character = yes
+		}
+	}
+}
+
+#Vilnius City Rights
+flavor_lit.25 = {
+	type = country_event
+	title = flavor_lit.25.title
+	desc = flavor_lit.25.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1360.1.1
+		to = 1400.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		location:vilnius = {
+			owner ?= root
+			NOT = { OR = { location_rank = location_rank:city  location_rank = location_rank:megalopolis } }
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		location:vilnius = {
+			save_scope_as = target_location
+		}
+
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.25.a
+
+		change_gold_effect = { scale = -10 }
+
+		scope:target_location = {
+			change_location_rank_effect = { location_rank = location_rank:city }
+			change_development = development_mild_bonus
+			change_prosperity = prosperity_mild_bonus
+
+			custom_tooltip = {
+				text = lit_all_vilnius_pops_become_loyal_tt
+				every_pop = {
+					limit = {
+						owner ?= root
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_bonus
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.25.b
+
+		add_prestige = prestige_mild_penalty
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_move_to_right
+		}
+	}
+}
+
+#Volok Reform
+flavor_lit.26 = {
+	type = country_event
+	title = flavor_lit.26.title
+	desc = flavor_lit.26.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1537.1.1
+		to = 1600.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.26.a
+
+		unlock_government_reform_effect = {
+			type = volok_reform
+		}
+
+		add_replacing_gov_reform = {
+			reform = government_reform:volok_reform
+		}
+
+		change_societal_value = {
+			type = serfdom_vs_free_subjects
+			value = societal_value_move_to_left
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_bonus
+		}
+
+		custom_tooltip = {
+			text = lit_all_peasant_pops_lose_satisfaction_tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						owner ?= root
+						pop_type = pop_type:peasants
+					}
+					add_pop_satisfaction = pop_satisfaction_mild_penalty
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.26.b
+
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_extreme_bonus
+		}
+
+		change_societal_value = {
+			type = serfdom_vs_free_subjects
+			value = societal_value_move_to_right
+		}
+	}
+}
+
+#Sudebnik of Lithuania, aka Casimir's Code
+flavor_lit.27 = {
+	type = country_event
+	title = flavor_lit.27.title
+	desc = flavor_lit.27.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1445.1.1
+		to = 1500.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_policy = statutes_of_lithuania_policy
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		unlock_policy_effect = {
+			type = lit_casimir_code_policy
+		}
+
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.27.a
+
+		add_policy = policy:lit_casimir_code_policy
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_extreme_bonus
+		}
+	}
+
+	option = {
+		name = flavor_lit.27.b
+
+		change_societal_value = {
+			type = aristocracy_vs_plutocracy
+			value = societal_value_large_move_to_right
+		}
+	}
+}
+
+#Kazimierz Siemienowicz
+flavor_lit.28 = {
+	type = country_event
+	title = flavor_lit.28.title
+	desc = flavor_lit.28.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1620.1.1
+		to = 1670.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		
+		create_character = {
+			estate = estate_type:nobles_estate
+			first_name = name_casimir
+			dynasty = dynasty:siemienowicz_dynasty
+			birth_date = 1600.4.3
+			birth_location = location:raseiniai
+			culture = culture:aukstaitian
+			religion = religion:catholic
+			adm = 75
+			dip = 50
+			mil = 75
+			add_trait = trait:cannoneer
+			script = kazimierz_siemienowicz
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+
+		ruler_or_regent ?= {
+			save_scope_as = target_character2
+		}
+	}
+
+	option = {
+		name = flavor_lit.28.a
+
+		change_gold_effect = { scale = -2 }
+
+		scope:target_character = {
+			move_country = root
+			add_adm = 10
+			add_dip = 10
+			add_mil = 10
+		}
+
+		add_army_tradition = army_tradition_mild_bonus
+	}
+
+	option = {
+		name = flavor_lit.28.b
+
+		capital ?= {
+			create_art = {
+				artist = scope:target_character
+				key = artis_magnae_artilleriae
+				quality = 75
+				type = work_of_art_type:treatise
+			}
+		}
+
+		scope:target_character = {
+			move_country = root
+			add_character_modifier = {
+				mode = add_and_extend
+				modifier = permanently_banned_from_cabinet
+				years = -1
+			}
+
+			add_character_modifier = {
+				mode = add_and_extend
+				modifier = block_leading_armies_or_navies
+				years = -1
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.28.c
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_bonus
+		}
+
+		scope:target_character = {
+			banish_character = yes
+		}
+	}
+}
+
+#Kontušo Juosta
+flavor_lit.29 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.29.title
+	desc = flavor_lit.29.desc
+	outcome = neutral
+
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_fine_cloth.dds"
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1600.1.1
+		to = 1750.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		capital.market ?= {
+			market_possible_goods_trade_surplus = { goods = goods:fine_cloth country = root value > 25 }
+		}
+	}
+
+	immediate = {
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.29.a
+
+		capital.market ?= {
+			add_temporary_demand = {
+				type = demand:lit_new_clothing_style
+				years = 25
+			}
+		}
+
+		add_prestige = prestige_mild_bonus
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+
+	option = {
+		name = flavor_lit.29.b
+
+		change_societal_value = {
+			type = aristocracy_vs_plutocracy
+			value = societal_value_move_to_right
+		}
+
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+#Palemonids
+flavor_lit.30 = {
+	type = country_event
+	title = flavor_lit.30.title
+	desc = flavor_lit.30.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1435.1.1
+		to = 1485.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns_or_non_sovereign_subject_owns = location:rome }
+		ruler_or_heir_if_regent ?= {
+			dynasty ?= dynasty:gediminid_dynasty
+		}
+		religion.group = religion_group:christian
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		create_character = {
+			estate = estate_type:clergy_estate
+			first_name = name_john
+			last_name = dlugosz
+			birth_date = 1415.12.1
+			birth_location = location:krakow
+			artist = writer
+			artist_skill = 0.7
+			culture = culture:lesser_polish
+			religion = religion:catholic
+			script = jan_dlugosz_character
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+
+		ruler_or_regent ?= {
+			save_scope_as = target_character2
+		}
+	}
+
+	option = {
+		name = flavor_lit.30.a
+
+		add_government_power = government_power_extreme_bonus
+
+		add_prestige = prestige_mild_bonus
+
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_extreme_penalty
+		}
+
+		scope:target_character = { move_country = root }
+		capital ?= {
+			create_art = {
+				artist = scope:target_character
+				key = tale_of_the_palemonids
+				quality = 70
+				type = work_of_art_type:chronicle
+			}
+		}
+
+		change_gold_effect = { scale = -1 }
+	}
+
+	option = {
+		name = flavor_lit.30.b
+
+		trigger = {
+			scope:target_character2 = { #Meant to make this option be a little rare
+				has_trait = zealot
+				has_trait = righteous
+				has_trait = glory_seeker
+			}
+		}
+
+		scope:target_character = { move_country = root }
+		capital ?= {
+			create_art = {
+				artist = scope:target_character
+				key = tale_of_the_palemonids
+				quality = 70
+				type = work_of_art_type:chronicle
+			}
+		}
+		add_casus_belli = {
+			target = location:rome.owner
+			type = casus_belli:cb_conquer_province
+			province = location:rome.province
+		}
+
+		add_stability = stability_extreme_penalty
+	}
+
+	option = {
+		name = flavor_lit.30.c
+
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_mild_bonus
+		}
+   		kill_character_silently = scope:target_character
+	}
+}
+
+#Return of the Pagan ways due to reformation
+flavor_lit.31 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.31.title
+	desc = flavor_lit.31.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1500.1.1
+		to = 1600.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		is_situation_active = situation:reformation
+		religion.group = religion_group:christian
+		"religion_percentage_in_country(religion:romuva)" > 0.05
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		set_variable = lit_ressurection_of_romuva_paganism_flag
+
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.31.a
+
+		custom_tooltip = {
+			text = lit_10_percent_of_primary_culture_pops_convert_to_romuva_tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						owner ?= root
+						culture = root.culture
+						religion.group = root.religion.group
+					}
+					split_pop = {
+						fraction = 0.1
+						religion = religion:romuva
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.31.b
+
+		custom_tooltip = {
+			text = lit_5_percent_of_primary_culture_pops_convert_to_romuva_tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						owner ?= root
+						culture = root.culture
+						religion.group = root.religion.group
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = religion:romuva
+					}
+				}
+			}
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = {
+				value = estate_satisfaction_severe_penalty
+				subtract = {
+					value = societal_value:spiritualist_vs_humanist
+					divide = 25
+					multiply = 0.1
+				}
+				max = 0.25
+				min = -0.25
+			}
+		}
+	}
+}
+
+#Resisting Polish Influence
+flavor_lit.32 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.32.title
+	desc = flavor_lit.32.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1500.1.1
+		to = 1600.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = c:POL
+		OR = {
+			is_subject_of = c:POL
+			junior_union_with = {
+				target = c:POL
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+
+		c:POL ?= {
+			save_scope_as = target_country
+		}
+	}
+
+	option = {
+		name = flavor_lit.32.a
+
+		change_societal_value = {
+			type = outward_vs_inward
+			value = societal_value_large_move_to_right
+		}
+
+		culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+
+		add_opinion_mutual_effect = {
+			modifier = lit_rejected_polish_influence
+			target = scope:target_country
+		}
+	}
+
+	option = {
+		name = flavor_lit.32.b
+
+		culture = {
+			add_cultural_influence = cultural_influence_weak_penalty
+			add_cultural_tradition = cultural_tradition_weak_penalty
+		}
+
+		change_societal_value = {
+			type = outward_vs_inward
+			value = societal_value_large_move_to_left
+		}
+
+		add_research_progress = research_progress_mild_bonus
+
+		add_opinion_mutual_effect = {
+			modifier = lit_accepted_polish_influence
+			target = scope:target_country
+		}
+	}
+}
+
+#Romuva Practices Disappear
+flavor_lit.33 = {
+	type = country_event
+	title = flavor_lit.33.title
+	desc = flavor_lit.33.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1337.1.1
+		to = 1821.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	trigger = {
+		religion != religion:romuva
+		"religion_percentage_in_country(religion:romuva)" = 0
+	}
+
+	option = {
+		name = flavor_lit.33.a
+
+		culture = {
+			add_cultural_influence = cultural_influence_weak_penalty
+			add_cultural_tradition = cultural_tradition_weak_penalty
+		}
+
+		add_research_progress = research_progress_mild_bonus
+
+		add_religious_influence_if_valid = {
+			VALUE = religious_influence_weak_bonus
+		}
+	}
+
+	option = {
+		name = flavor_lit.33.b
+
+		custom_tooltip = {
+			text = lit_all_primary_culture_pops_gain_satisfaction_tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						owner ?= root
+						culture = root.culture
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_bonus
+				}
+			}
+		}
+	}
+}
+
+#Implementation of Ruthenian Laws
+flavor_lit.34 = {
+	type = country_event
+	title = flavor_lit.34.title
+	desc = flavor_lit.34.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1350.1.1
+		to = 1450.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.34.a
+
+		unlock_estate_privilege_effect = {
+			type = lit_integrated_ruthenian_laws
+		}
+	}
+
+	trigger = {
+		has_presence_in = region:ruthenia_region
+	}
+
+	option = {
+		name = flavor_lit.34.b
+
+		add_stability = stability_mild_bonus
+
+		custom_tooltip = {
+			text = lit_all_lithuanian_nobles_gain_pop_satisfaction_tt
+			every_owned_location = {
+				every_pop = {
+					limit = {
+						culture = root.culture
+					}
+					add_pop_satisfaction = pop_satisfaction_mild_bonus
+				}
+			}
+		}
+	}
+}
+
+#First Manuscript in Lithuanian Language
+flavor_lit.35 = {
+	type = country_event
+	title = flavor_lit.35.title
+	desc = flavor_lit.35.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1530.1.1
+		to = 1570.1.1
+		monthly_chance = 5
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		has_embraced_institution = institution:printing_press
+		court_dialect = dialect:lithuanian_dialect
+	}
+
+	image = "gfx/interface/illustrations/institutions/printing_press.dds"
+
+	immediate = {
+		create_character = {
+			estate = estate_type:clergy_estate
+			first_name = name_martin
+			last_name = mazvydas
+			religion = religion:lutheran
+			culture = culture:aukstaitian
+			birth_location = location:konigsberg
+			birth_date = 1510.4.3
+			artist = writer
+			artist_skill = 0.7
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+	}
+
+	option = {
+		name = flavor_lit.35.a
+
+		change_gold_effect = { scale = -3 }
+
+		capital ?= {
+			create_art = {
+				artist = scope:target_character
+				key = simple_words_of_catechism
+				quality = 75
+				type = work_of_art_type:treatise
+			}
+		}
+
+		culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+		scope:target_character = { move_country = root }
+	}
+
+	option = {
+		name = flavor_lit.35.b
+
+		change_societal_value = {
+			type = individualism_vs_communalism
+			value = societal_value_move_to_right
+		}
+
+		add_research_progress = research_progress_mild_penalty
+		scope:target_character = { banish_character = yes }
+	}
+}
+
+#Polish Immigrants
+flavor_lit.36 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.36.title
+	desc = flavor_lit.36.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1500.1.1
+		to = 1700.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = c:POL
+		OR = {
+			is_subject_of = c:POL
+			junior_union_with = {
+				target = c:POL
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		c:POL = {
+			ordered_owned_location = {
+				order_by = population
+				max = 1
+				save_scope_as = target_location
+			}
+			save_scope_as = target_country
+		}
+
+		ordered_owned_location = {
+			order_by = {
+				value = population
+				multiply = -1
+			}
+			max = 1
+			save_scope_as = target_location2
+		}
+	}
+
+	option = {
+		name = flavor_lit.36.a
+
+		add_migration = {
+			amount = 0.2
+			from = scope:target_location.province_definition
+			owner = scope:target_country
+			to = scope:target_location2.province_definition
+			months = 60
+		}
+
+		add_opinion_mutual_effect = {
+			modifier = lit_encouraged_migrants
+			target = scope:target_country
+		}
+	}
+
+	option = {
+		name = flavor_lit.36.b
+
+		add_opinion_mutual_effect = {
+			modifier = lit_respected_migrants
+			target = scope:target_country
+		}
+	}
+}
+
+#Lithuanian Renaissance
+flavor_lit.37 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.37.title
+	desc = flavor_lit.37.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1445.1.1
+		to = 1500.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		has_embraced_institution = institution:renaissance
+		prestige >= 40
+	}
+
+	image = "gfx/interface/illustrations/institutions/renaissance.dds"
+
+	immediate = {
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.37.a
+
+		add_prestige = prestige_mild_bonus
+
+		change_societal_value = {
+			type = outward_vs_inward
+			value = societal_value_move_to_left
+		}
+
+		add_gold = {
+			value = root.monthly_income_trade_and_tax
+			multiply = 10
+			divide = {
+				value = root.ruler_or_regent.adm
+				divide = 6
+			}
+			multiply = -1
+		}
+	}
+
+	option = {
+		name = flavor_lit.37.b
+
+		add_prestige = prestige_mild_penalty
+
+		change_societal_value = {
+			type = outward_vs_inward
+			value = societal_value_move_to_right
+		}
+	}
+}
+
+#Grain Supply of Europe - changed by Kotyk
+flavor_lit.38 = {
+	type = country_event
+	title = flavor_lit.38.title
+	desc = flavor_lit.38.desc
+	outcome = neutral
+
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_wheat.dds"
+
+	dynamic_historical_event = {
+		tag = LIT
+		tag = KIE
+		tag = UKR
+		from = 1400.1.1
+		to = 1600.1.1
+		monthly_chance = 2
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		region:ruthenia_region = {
+			any_ownable_location_in_region = {
+				percent >= 0.05
+				raw_material = goods:wheat
+				owner ?= root
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.38.a
+
+		custom_tooltip = {
+			text = lit_cheaper_granaries_in_ruthenia_tt
+			every_owned_location = {
+				limit = {
+					region = region:ruthenia_region
+					raw_material = goods:wheat
+				}
+				add_location_modifier = {
+					mode = add_and_extend
+					modifier = lit_grain_supply_of_europe
+					years = 20
+				}
+			}
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_mild_penalty
+		}
+	}
+
+	option = {
+		name = flavor_lit.38.b
+
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_mild_bonus
+		}
+
+		change_gold_effect = { scale = 2 }
+	}
+}
+
+#Franciszek Smuglewicz
+flavor_lit.39 = {
+	type = country_event
+	title = flavor_lit.39.title
+	desc = flavor_lit.39.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1770.1.1
+		to = 1810.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	image = "gfx/interface/illustrations/institutions/renaissance.dds"
+
+	trigger = {
+		court_dialect = dialect:lithuanian_dialect
+	}
+
+	immediate = {
+		create_character = {
+			estate = estate_type:burghers_estate
+			first_name = name_francis
+			last_name = smuglewicz
+			birth_location = location:warsaw
+			religion = religion:catholic
+			culture = culture:greater_polish
+			birth_date = 1745.10.6
+			artist = painter
+			artist_skill = 0.8
+			adm = 43
+			dip = 33
+			mil = 12
+			save_scope_as = target_character
+			create_in_limbo = yes
+		}
+
+		ruler_or_regent ?= {
+			save_scope_as = target_character2
+		}
+	}
+
+	option = {
+		name = flavor_lit.39.a
+
+		culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+			add_cultural_tradition = cultural_tradition_mild_bonus
+		}
+
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_move_to_right
+		}
+
+		change_gold_effect = { scale = -2 }
+		scope:target_character = { move_country = root }
+	}
+
+	option = {
+		name = flavor_lit.39.b
+
+		scope:target_character = {
+			banish_character = yes
+		}
+
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_move_to_left
+		}
+	}
+}
+
+###Pulse events for conversion of Romuva###
+
+#Peasants still follow Romuva in $LOCATION$
+flavor_lit.40 = {
+	type = country_event
+	title = flavor_lit.40.title
+	desc = flavor_lit.40.desc
+	outcome = neutral
+
+	trigger = {
+		tag = LIT
+		"religion_percentage_in_country(religion:romuva)" >= 0.05
+		religion != religion:romuva
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		ordered_owned_location = {
+			limit = {
+				any_pop = {
+					religion = religion:romuva
+				}
+			}
+			order_by = population
+			max = 1
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_lit.40.a
+
+		custom_tooltip = {
+			text = lit_convert_percentage_of_pops_in_location_tt
+			scope:target_location = {
+				every_pop = {
+					limit = {
+						owner ?= root
+						religion != root.religion
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = root.religion
+					}
+				}
+			}
+		}
+
+		custom_tooltip = {
+			text = lit_all_romuva_pop_become_unhappy_tt
+			every_owned_location = {
+				limit = {
+					any_pop = {
+						owner ?= root
+						religion = religion:romuva
+					}
+				}
+				every_pop = {
+					limit = {
+						owner ?= root
+						religion = religion:romuva
+					}
+					add_pop_satisfaction = pop_satisfaction_weak_penalty
+				}
+			}
+		}
+
+		add_religious_influence_if_valid = {
+			VALUE = religious_influence_weak_penalty
+		}
+	}
+
+	option = {
+		name = flavor_lit.40.b
+
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_weak_penalty
+		}
+	}
+}
+
+#Romuva Religious Site Remaining
+flavor_lit.41 = {
+	type = country_event
+	title = flavor_lit.41.title
+	desc = flavor_lit.41.desc
+	outcome = neutral
+
+	trigger = {
+		tag = LIT
+		"religion_percentage_in_country(religion:romuva)" >= 0.05
+		religion != religion:romuva
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:peasants_estate }
+		random_owned_location = {
+			limit = {
+				NOT = {
+					has_location_modifier = lit_destruction_of_romuva_sites
+				}
+				any_pop = {
+					religion = religion:romuva
+				}
+			}
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_lit.41.a
+
+		scope:target_location = {
+			add_location_modifier = {
+				mode = add_and_extend
+				modifier = lit_destruction_of_romuva_sites
+				months = 120
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.41.b
+
+		custom_tooltip = {
+			text = lit_romuva_pops_in_location_gain_satisfaction_tt
+			scope:target_location = {
+				every_pop = {
+					limit = {
+						owner ?= root
+						religion = religion:romuva
+					}
+					add_pop_satisfaction = pop_satisfaction_mild_bonus
+				}
+			}
+		}
+	}
+}
+
+#Conversion of Nobles to Romuva
+flavor_lit.42 = {
+	type = country_event
+	title = flavor_lit.42.title
+	desc = flavor_lit.42.desc
+	outcome = neutral
+
+	trigger = {
+		tag = LIT
+		any_owned_location = {
+			any_pop = {
+				pop_type = pop_type:nobles
+				religion = religion:romuva
+			}
+		}
+		religion != religion:romuva
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_lit.42.a
+
+		custom_tooltip = {
+			text = lit_convert_percent_of_nobles_to_religion_tt
+			every_owned_location = {
+				limit = {
+					any_pop = {
+						owner ?= root
+						pop_type = pop_type:nobles
+						religion = religion:romuva
+					}
+				}
+				every_pop = {
+					limit = {
+						owner ?= root
+						pop_type = pop_type:nobles
+						religion = religion:romuva
+					}
+					split_pop = {
+						fraction = 0.05
+						religion = root.religion
+					}
+				}
+			}
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_penalty
+		}
+	}
+
+	option = {
+		name = flavor_lit.42.b
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+}
+
+##End of Romuva Conversion Pulse Events##
+
+#Attracting Tatar Families in Mainland Lithuania
+flavor_lit.43 = {
+	type = country_event
+	title = flavor_lit.43.title
+	desc = flavor_lit.43.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1400.1.1
+		to = 1500.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		"culture_percentage_in_country(culture:crimean)" >= 0.05
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+		ordered_owned_location = {
+			order_by = population
+			limit = {
+				is_capital = no
+				any_pop = {
+					culture = culture:crimean
+				}
+			}
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_lit.43.a
+
+		add_migration = {
+			amount = 0.05
+			from = scope:target_location.province_definition
+			owner = root
+			to = capital.province_definition
+			months = 120
+			culture = culture:crimean
+		}
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_minor_move_to_left
+		}
+
+		add_army_tradition = army_tradition_mild_bonus
+
+		change_gold_effect = { scale = -0.5 }
+	}
+
+	option = {
+		name = flavor_lit.43.b
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_minor_move_to_right
+		}
+	}
+}
+
+#Counter-Reformation Effects on Romuva People
+flavor_lit.44 = {
+	type = country_event
+	title = flavor_lit.44.title
+	desc = flavor_lit.44.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1500.1.1
+		to = 1600.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		"religion_percentage_in_country(religion:romuva)" >= 0.05
+		is_situation_active = situation:reformation
+		religion.group = religion_group:christian
+		custom_tooltip = {
+			text = variable_lit_ressurection_of_romuva_paganism_flag_tt
+		has_variable = lit_ressurection_of_romuva_paganism_flag
+		}
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:peasants_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+
+		remove_variable = lit_ressurection_of_romuva_paganism_flag
+	}
+
+	option = {
+		name = flavor_lit.44.a
+
+		custom_tooltip = {
+			text = lit_unlock_parliament_debate_to_convert_romuva_people_for_the_rest_of_the_situation_tt
+			unlock_parliament_issue_effect = {
+				type = lit_measures_against_romuva
+			}
+		}
+	}
+
+	option = {
+		name = flavor_lit.44.b
+
+		change_societal_value = {
+			type = individualism_vs_communalism
+			value = societal_value_move_to_right
+		}
+
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_move_to_left
+		}
+	}
+}
+
+#Statutes of Lithuania
+flavor_lit.45 = {
+	type = country_event
+	title = flavor_lit.45.title
+	desc = flavor_lit.45.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1520.1.1
+		to = 1600.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		has_policy = lit_casimir_code_policy
+		has_advance = statutes_of_lithuania
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_lit.45.a
+
+		add_policy = policy:statutes_of_lithuania_policy
+
+		add_government_power = government_power_extreme_penalty
+		add_stability = stability_mild_penalty
+	}
+
+	option = {
+		name = flavor_lit.45.b
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_move_to_right
+		}
+
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+}
+
+#Granting Hansa right in Kaunas for Development
+flavor_lit.1000 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_lit.1000.title
+	desc = flavor_lit.1000.desc
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1400.1.1
+		to = 1500.1.1
+		monthly_chance = 3
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		country_exists = c:HSA
+		c:HSA = {
+			is_subject = no
+			has_reform = government_reform:hanseatic_merchant_federation
+		}
+		location:kaunas = {
+			owner ?= root
+			NOT = { has_building = building_type:hanseatic_kontor }
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		location:kaunas = {
+			save_scope_as = target_location
+		}
+
+		save_scope_as = target_country
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+
+		c:HSA = {
+			save_scope_as = target_country2
+		ruler_or_regent ?= {
+			save_scope_as = target_character2
+		}
+		}
+	}
+
+	option = {
+		name = flavor_lit.1000.a
+
+		scope:target_country2 = {
+			trigger_event_non_silently = flavor_lit.1001
+		}
+	}
+
+	option = {
+		name = flavor_lit.1000.b
+
+		custom_tooltip = lit_no_offer_on_hansa_tt
+
+		add_prestige = prestige_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+	}
+}
+
+flavor_lit.1001 = {
+	type = country_event
+	title = flavor_lit.1001.title
+	desc = flavor_lit.1001.desc
+	outcome = neutral
+	major = yes
+	major_trigger = {
+		this = scope:target_country
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+	
+	option = {
+		name = flavor_lit.1001.a
+
+		scope:target_location = {
+			construct_building = {
+				building_type = building_type:hanseatic_kontor
+				cost_multiplier = 0.75
+				cost_multiplier_reason = "burghers_cheap_sponsorship"
+				owner = scope:target_country2
+			}
+			change_development = development_extreme_bonus
+			change_prosperity = prosperity_extreme_bonus
+		}
+
+		add_opinion_mutual_effect = {
+			modifier = lit_accepted_hansa_rights
+			target = scope:target_country
+		}
+	}
+
+	option = {
+		name = flavor_lit.1001.b
+
+		add_opinion_mutual_effect = {
+			modifier = lit_rejected_hansa_rights
+			target = scope:target_country
+		}
+	}
+}
+
+# Order of Succession
+# Regularizing succession in preparation for dynastic continuity
+flavor_lit.46 = {
+	type = country_event
+	title = flavor_lit.46.title
+	desc = flavor_lit.46.desc
+	outcome = neutral
+	historical_info = flavor_lit.46.historical_info
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = LIT
+		from = 1350.1.1
+		to = 1410.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		has_ruler = yes
+		succession_law = heir_selection:favorite_son_elective_succession
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = flavor_lit.46.a
+		historical_option = yes
+
+		change_heir_selection = heir_selection:cognatic_primogeniture
+		add_legitimacy = legitimacy_mild_bonus
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_penalty
+		}
+	}
+
+	option = {
+		name = flavor_lit.46.b
+
+		add_prestige = prestige_mild_penalty
+	}
+}

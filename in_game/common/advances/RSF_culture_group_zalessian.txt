@@ -1,0 +1,84 @@
+﻿############################
+# age_1_traditions
+############################
+russian_resiliance = {
+	age = age_1_traditions
+	potential = {
+		culture = { has_culture_group = culture_group:zalessian_group }
+	}
+	global_manpower_modifier = 0.1
+	requires = legalism_advance
+}
+
+
+############################
+# age_2_renaissance
+############################
+the_mestnichestvo_advance = {
+	age = age_2_renaissance
+	potential = {
+		culture = { has_culture_group = culture_group:zalessian_group }
+	}
+	unlock_government_reform = the_mestnichestvo
+	ai_weight = { add = 100 }
+}
+
+
+############################
+# age_3_discovery
+############################
+siberian_frontier = {
+	age = age_3_discovery
+	potential = {
+		culture = { has_culture_group = culture_group:zalessian_group }
+	}
+	global_population_growth = 0.0002
+	unlock_building = pomor_outpost
+	ai_weight = { add = 100 }
+	requires = colonial_charters	
+}
+
+
+############################
+# age_4_reformation
+############################
+russian_artillery_yard = {
+	age = age_4_reformation
+	potential = {
+		culture = { has_culture_group = culture_group:zalessian_group }
+	}
+	army_artillery_build_cost_modifier = -0.1
+	army_artillery_power = 0.1
+	ai_weight = { add = 100 }
+	requires = recruitment_improvements_reformation
+}
+
+
+############################
+# age_5_absolutism
+############################
+table_of_ranks = {
+	age = age_5_absolutism
+	potential = {
+		culture = { has_culture_group = culture_group:zalessian_group }
+	}
+	monthly_army_tradition = 0.03
+	ai_weight = { add = 100 }
+}
+
+
+############################
+# age_6_revolutions
+############################
+russian_legitimization = {
+	age = age_6_revolutions
+	potential = {
+		culture = { has_culture_group = culture_group:zalessian_group }
+	}
+	monthly_legitimacy = 0.1
+	monthly_republican_tradition = 0.1
+	monthly_devotion = 0.1
+	monthly_horde_unity = 0.1
+	monthly_tribal_cohesion = 0.1
+	ai_weight = { add = 10 }
+}

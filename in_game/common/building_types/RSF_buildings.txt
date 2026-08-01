@@ -1,0 +1,61 @@
+﻿# ----- UPDATED by Kotyk -----
+# Kurultai
+
+TRY_INJECT:kurultai = { # Kurultai	
+	rural_settlement = no	# Changed to no
+	
+	modifier = {
+		local_proximity_source = 50
+	}
+}
+
+
+# ----- ADDED by Kotyk -----
+# Kyiv-Pechersk Lavra
+
+kyiv_pech_lavra = { # Kyiv-Pechersk Lavra
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy	
+	employment_size = huge_religious_building_employment
+	category = religious_category
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	build_time = religious_building_time
+
+	expensive = yes
+	
+	country_potential = {
+		always = no
+	}
+
+	allow = {
+		always = no
+	}	
+
+	unique_production_methods = {
+		kyiv_pech_lavra_maintenance = {
+			glass = 0.05
+			paper = 0.1
+			books = 0.05
+			cloth = 0.1
+			wine = 0.1
+			beeswax = 0.2
+			category = building_maintenance
+		}
+	}
+	
+	modifier = {
+		local_clergy_estate_power = 1.0
+		local_clergy_food_consumption = 0.5
+		local_cultural_tradition = 0.25
+		local_institution_growth_modifier = 0.1
+		monthly_towards_spiritualist = societal_value_minor_monthly_move
+	}
+
+	construction_demand = town_building_construction
+}

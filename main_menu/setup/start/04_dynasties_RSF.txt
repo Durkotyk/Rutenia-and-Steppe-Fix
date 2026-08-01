@@ -1,0 +1,17 @@
+dynasty_manager = {
+
+#	ostrozkyi_dynasty = {
+#		name = { name = ostrozkyi_dynasty }
+#		home = ostroh
+#	}
+
+#	mazepa_dynasty = {
+#		name = { name = mazepa_dynasty }
+#		home = bila_tserkva
+#	}
+
+	geray_dynasty = {
+		name = { name = geray_dynasty }
+		home = solkhat
+	}
+}

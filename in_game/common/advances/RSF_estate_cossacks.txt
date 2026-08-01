@@ -1,0 +1,147 @@
+﻿# Cossack advances start in the Age of Discovery only
+# Better chronological sequence
+
+############################
+# age_3_discovery
+############################
+cossacks_exploration_advance = {
+	age = age_3_discovery
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	unlock_estate_privilege = cossacks_explorers
+
+	requires = explorer_commisions_advance
+}
+
+cossacks_colonization_advance = {
+	age = age_3_discovery
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	unlock_estate_privilege = cossacks_colonization
+
+	requires = native_policy_advance
+}
+
+cossacks_military_society = {
+	age = age_3_discovery
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	monthly_army_tradition = 0.05
+
+	requires = correct_box_advance_discovery
+}
+
+
+############################
+# age_4_reformation
+############################
+cossacks_recruitment = {
+	age = age_4_reformation
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	army_light_infantry_power = 0.15
+	unlock_estate_privilege = cossacks_military_service
+
+	requires = correct_box_advance_reformation
+}
+
+cossacks_serf_autonomy = {
+	age = age_4_reformation
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	global_separatism = -0.05
+
+	requires = pop_promotion_speed_age_4
+}
+
+cossack_administration = {
+	age = age_4_reformation
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	discipline = 0.05
+	global_manpower_modifier = 0.1
+	unlock_estate_privilege = cossacks_government_positions
+
+	requires = confessional_court
+}
+
+cossack_raids = {
+	age = age_4_reformation
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	amount_looted_modifier = 0.25
+	navy_light_ship_power = 0.1
+
+	requires = unlock_pistoleers_advance
+}
+
+
+############################
+# age_5_absolutism
+############################
+cossacks_registered = {
+	age = age_5_absolutism
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	unlock_estate_privilege = cossacks_register
+
+	requires = correct_box_advance_absolutism
+}
+
+cossacks_hetmanate = {
+	age = age_5_absolutism
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	monthly_legitimacy = 0.05
+	monthly_republican_tradition = 0.05
+	monthly_devotion = 0.05
+	monthly_horde_unity = 0.05
+	monthly_tribal_cohesion = 0.05
+	unlock_estate_privilege = cossacks_rada_autonomy
+
+	requires = absolute_rulership
+}
+
+cossacks_escaped_serfs = {
+	age = age_5_absolutism
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	army_reinforce_efficiency = 0.10
+
+	requires = army_doctrine_law_advance
+}
+
+
+############################
+# age_6_revolutions
+############################
+cossack_reputation = {
+	age = age_6_revolutions
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	army_light_cavalry_power = 0.1
+
+	requires = correct_box_advance_revolutions
+}
+
+steppe_riders = {
+	age = age_6_revolutions
+	potential = {
+		country_has_estate = estate_type:cossacks_estate
+	}
+	land_unit_attrition = -0.1
+	global_horses_output_modifier = 0.2
+
+	requires = unlock_light_dragoons_advance
+}

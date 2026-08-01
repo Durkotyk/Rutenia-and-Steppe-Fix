@@ -1,0 +1,4 @@
+diplomacy_manager = {
+    dependency = { first = GLH second = QQY subject_type = vassal }
+    dependency = { first = GLH second = ISC subject_type = vassal }
+}

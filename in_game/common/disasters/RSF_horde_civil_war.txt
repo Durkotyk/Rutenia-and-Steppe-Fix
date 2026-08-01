@@ -1,0 +1,7 @@
+﻿# Unity Hit changed +35 from +50
+
+TRY_INJECT:horde_civil_war = {
+	modifier = {
+		horde_unity_hit_at_ruler_death = -15
+	}
+}

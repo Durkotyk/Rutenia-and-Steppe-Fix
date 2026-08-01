@@ -1,0 +1,97 @@
+﻿l_english:
+
+ # Kyiv
+ northern_jerusalem: "Northern Jerusalem"
+ northern_jerusalem_desc: "Following the Baptism of Rus, Kyiv became one of the foremost centers of Eastern Christianity. Its ancient monasteries, revered relics, and spiritual learning earned it the name 'Northern Jerusalem,' drawing pilgrims and clergy from across the Orthodox world."
+ 
+ 
+ # Halych
+ high_castle: "High Castle"
+ high_castle_desc: "Perched atop commanding hills, the mighty fortresses of Halych and Lviv guard the Carpathian frontier. Their walls stand as a steadfast shield against invaders from every direction."
+
+ # Volhynia
+ between_four_fires: "Between Four Fires"
+ between_four_fires_desc: "Caught between powerful neighbors, Halych-Volhynian rulers mastered the art of balancing rival ambitions through diplomacy, alliances, and careful compromise."
+
+ # Chernihiv
+ olgovych_realm: "Realm of the Olgovychs"
+ olgovych_realm_desc: "For generations, the Olgovych princes ruled one of Rus most enduring dynasties, preserving their authority through intricate succession, diplomacy, and determined resilience."
+
+ # Novhorod-Siverskyi
+ legacy_of_prince_igor: "Legacy of Prince Igor"
+ legacy_of_prince_igor_desc: "The ill-fated campaign of Prince Igor lives on in legend, inspiring generations with tales of courage, sacrifice, and the enduring spirit of the Severian lands."
+
+
+ # Lithuania
+ tolerant_rule_advance: "Tolerant Rule"
+ tolerant_rule_advance_desc: "Our people coexist with fellow men and women of many cultures. This diverse social composition is embedded in our legal frameworks and attitude. Together, we are stronger!"
+
+ lith_wilderness: "Lithuanian Wilderness"
+ lith_wilderness_desc: "The dense forests and trackless marshes of Lithuania have long been its greatest shield. Invading armies struggle through the untamed wilderness, while local warriors strike from terrain they know by heart."
+
+
+ # Crimea
+ syvash_salt: "Syvash Salt"
+ syvash_salt_desc: "The shallow lagoons of the Syvash have yielded prized salt since antiquity. Harvested beneath the southern sun and carried by merchants across the steppe and the Black Sea, Crimean salt became an essential commodity, enriching the khanate and provisioning distant lands."
+
+
+ # Pontic region
+ pontic_mosaic_advance: "Pontic Mosaic"
+ pontic_mosaic_advance_desc: "Along the windswept shores of the Black Sea, Greeks, Tatars, Ruthenians, Armenians, Alans, and countless others have long shared markets, ports, and the Steppe. Here, survival was never found in uniformity, but in coexistence."
+
+
+ # Ruthene culture group
+ varangians_greeks: "From the Varangians to the Greeks" 
+ varangians_greeks_desc: "Ancient trade routes linking the Baltic and Black Seas continue to shape the commerce of the lands of Rus. Merchants, river fleets, and fortified settlements along the great waterways connect distant markets, fostering trade, prosperity, and cultural exchange across Eastern Europe."
+
+ ruthenian_cochineal: "Ruthenian Chervets" 
+ ruthenian_cochineal_desc: "The tiny cochineal insects found beneath the soil of Ruthenian lands provide a rare crimson dye coveted across Europe. Collected and processed by skilled craftsmen, this valuable export enriches merchants and connects local economies with distant markets."
+
+ cyrillic_printing: "Cyrillic Printing" 
+ cyrillic_printing_desc: "Inspired by pioneers of European printing, Ruthenian craftsmen establish presses that spread books, religious texts, and knowledge in the Cyrillic script. From the works of Francysk Skaryna to the printing efforts of Ivan Fedorov, these presses strengthen literacy, education, and cultural identity across Ruthenian lands."
+
+
+ # Ukrainian culture group
+ steppe_frontier: "Steppe Frontier" 
+ steppe_frontier_desc: "Along the windswept frontier, fortified settlements and watch posts rise where the steppe meets the settled lands. Communities organize for defense, maintaining militias, signal networks, and strongholds to withstand Tatar incursions. Though life on the border remains harsh and uncertain, these frontier lands grow into a resilient shield protecting the heartland from the dangers of the open steppe."
+
+ chumak_trading: "Chumak Trading" 
+ chumak_trading_desc: "Across the wide plains, caravans of Chumak merchants carry salt, fish, and other goods between the Black Sea and the inland markets. Their well-traveled routes bind distant regions together, enriching frontier communities and fostering a tradition of commerce, endurance, and enterprise."
+
+ gunpowder_boom: "Gunpowder Boom" 
+ gunpowder_boom_desc: "Abundant saltpeter, gathered from the earthworks of ancient fortifications and refined by local craftsmen, fuels a thriving gunpowder industry. Reliable supplies of powder sustain armies, fortresses, and firearms production, strengthening the realm's military capabilities and making the frontier a vital center of war materiel."
+
+ religious_brotherhoods: "Religious Brotherhoods" 
+ religious_brotherhoods_desc: "Lay brotherhoods founded beside churches and monasteries support schools, hospitals, printing houses, and charitable works. By strengthening religious life and promoting education, they foster a learned, resilient society capable of preserving its traditions through times of political and spiritual change."
+
+ fiery_army: "Fiery Army" 
+ fiery_army_desc: "Forged by years of frontier warfare, Cossack forces become renowned for their bold assaults and relentless sieges. Skilled at storming fortifications, digging trenches, and adapting quickly on the battlefield, they turn determination and ingenuity into a powerful weapon against even the strongest defenses."
+
+ orlyk_constitution: "Orlyk's Constitution" 
+ orlyk_constitution_desc: "Written in the aftermath of a turbulent struggle for independence, the Constitution of Pylyp Orlyk envisions a balance between the ruler, the Cossack host, and the wider political community. By defining rights, responsibilities, and limits of power, it strengthens trust between estates and promotes a more stable order."
+
+
+ # Belarusian culture group
+ ruthenian_law_tradition: "Ruthenian Law Tradition"
+ ruthenian_law_tradition_desc: "Centuries of legal custom, princely charters, and municipal privileges shaped a durable Ruthenian legal tradition that endured under successive states."
+
+ hardened_cavalry: "Hardened Cavalry"
+ hardened_cavalry_desc: "Forged in constant frontier warfare, Ruthenian cavalry earned renown for its discipline and valor, proving decisive in battles such as Grunwald."
+
+ polesian_lumber: "Polesian Lumber"
+ polesian_lumber_desc: "The vast forests of Polesia supplied timber, tar, and potash, sustaining local livelihoods while feeding the growing demands of distant markets."
+
+ skaryna_printing: "Skaryna's Printing"
+ skaryna_printing_desc: "Francysk Skaryna's pioneering Cyrillic press spread literacy and learning, bringing books in the Ruthenian tongue to a wider audience."
+
+ volok_reform: "Volok Reform"
+ volok_reform_desc: "The measurement and redistribution of land into standardized voloks improved taxation, agricultural organization, and the efficiency of rural estates."
+
+ religious_dualism: "Religious Dualism"
+ religious_dualism_desc: "For generations, Orthodox and Uniate communities lived side by side, creating a society shaped by religious diversity and compromise."
+
+ polesian_amber: "Polesian Amber"
+ polesian_amber_desc: "Amber gathered from the rivers and marshes of Polesia became a valued trade commodity, prized for both ornament and craftsmanship."
+
+ new_bread: "New Bread"
+ new_bread_desc: "The widespread adoption of the potato transformed rural life, providing reliable harvests that sustained population growth and reduced the threat of famine."

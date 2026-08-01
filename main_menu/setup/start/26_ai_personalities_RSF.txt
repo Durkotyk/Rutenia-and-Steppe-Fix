@@ -1,0 +1,42 @@
+# Changed Hungary, Naples to cautious
+# Changed Lithuania to expansionist
+# Added Georgia defensive
+# Added Novgorod opprotunistic
+# Added Kazan, Uzbek, Great Hordes aggressive
+
+
+countries = {
+	countries = {
+
+		# Aggressive: militarist nations that pursue wars without hesitation
+		ATR = { ai_personality = ai_aggressive }  # Great Horde 	- Kotyk
+		KZN = { ai_personality = ai_aggressive }  # Kazani Khanate 	- Kotyk
+		UZB = { ai_personality = ai_aggressive }  # Uzbek Khanate 	- Kotyk
+
+		# Expansionist: nations with clear territorial ambitions but follow casus belli
+		LIT = { ai_personality = ai_expansionist }  # Lithuania 	- Kotyk
+
+		# Defensive: nations content to hold their ground
+		GEO = { ai_personality = ai_defensive }  # Georgia 			- Kotyk
+		SMO = { ai_personality = ai_defensive }  # Smolensk 		- Kotyk
+		KIE = { ai_personality = ai_defensive }  # Kyiv 			- Kotyk
+		VOL = { ai_personality = ai_defensive }  # Volhynia 		- Kotyk
+		HAL = { ai_personality = ai_defensive }  # Halych 			- Kotyk
+		CHR = { ai_personality = ai_defensive }  # Chernihiv 		- Kotyk
+		BRY = { ai_personality = ai_defensive }  # Bryansk	 		- Kotyk
+		CRI = { ai_personality = ai_defensive }  # Crimea	 		- Kotyk
+
+		# Cautious: risk-averse, prefer safe diplomacy over war
+		HUN = { ai_personality = ai_cautious }  # Hungary 			- Kotyk
+		NAP = { ai_personality = ai_cautious }  # Naples 			- Kotyk
+		MLO = { ai_personality = ai_cautious }  # Milan 			- Kotyk
+
+		# Opportunistic: exploit others' weaknesses; trade-focused
+		NOV = { ai_personality = ai_opportunistic }  # Novgorod 	- Kotyk
+		GAZ = { ai_personality = ai_opportunistic }  # Gazaria	 	- Kotyk
+		POL = { ai_personality = ai_opportunistic }  # Poland	 	- Kotyk
+
+		# Isolationist: internally focused, avoid foreign entanglement
+
+	}
+}
