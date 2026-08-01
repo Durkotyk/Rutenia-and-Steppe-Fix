@@ -49,7 +49,7 @@ reuniting_rus = {
 	potential = {
 		has_or_had_tag = UKR
 	}
-	global_separatism = -0.1
+	global_separatism = -0.15
 	monthly_legitimacy = 0.05
 	monthly_republican_tradition = 0.05
 	monthly_devotion = 0.05
