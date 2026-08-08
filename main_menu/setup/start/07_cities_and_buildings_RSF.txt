@@ -41,6 +41,10 @@ locations={
 	naomao = { rank = town 				town_setup = central_asian_town }
 	zavkhan = { rank = town 			town_setup = central_asian_town }
 	khar_balgas = { rank = town 		town_setup = central_asian_town }
+	boorj = { rank = town 				town_setup = central_asian_town }
+	balj = { rank = town 				town_setup = central_asian_town }
+	bulgan = { rank = town 				town_setup = central_asian_town }
+	kurchum = { rank = town 			town_setup = central_asian_town }
 
 	#Central Asia
 	almaliq = { rank = city 		town_setup = central_asian_city }
@@ -48,6 +52,7 @@ locations={
 	khujand = { rank = town 		town_setup = central_asian_town }
 	vakhs = { rank = town 			town_setup = central_asian_town }
 	maymana = { rank = town 		town_setup = central_asian_town }
+	andkhoy = { rank = town 		town_setup = central_asian_town }
 
 	#Levant, Caucasus and Persia	
 	kutaisi = { rank = town 	town_setup = christian_anatolian_town }
@@ -113,11 +118,11 @@ building_manager = {
 	kurultai = { tag = KHD level = 1 location = zavkhan }
 	kurultai = { tag = TRH level = 1 location = bulgan }
 	kurultai = { tag = BGT level = 1 location = balj }
-	market_village = { tag = BGT level = 1 location = balj } #To get market access for the kurultai to work
+	#market_village = { tag = BGT level = 1 location = balj } #To get market access for the kurultai to work
 	kurultai = { tag = HCN level = 1 location = qingzhou_mongol }
 	kurultai = { tag = OTC level = 1 location = taizhou_jurchen }
 	kurultai = { tag = QAS level = 1 location = boorj }
-	market_village = { tag = QAS level = 1 location = boorj } #To get market access for the kurultai to work
+	#market_village = { tag = QAS level = 1 location = boorj } #To get market access for the kurultai to work
 	kurultai = { tag = OGE level = 1 location = kurchum }
 	
 	caravanserai = { tag = GLH level = 1 location = rechnoye }

@@ -30878,8 +30878,11 @@ countries = {
 		}
 		country_rank = rank_kingdom
 
-		tolerated_cultures = {
-			uzbek_culture
+		accepted_cultures = {
+			uzbek_culture			
+		}
+
+		tolerated_cultures = {			
 			telengit_culture
 		}
 
@@ -30912,7 +30915,7 @@ countries = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -30952,7 +30955,7 @@ countries = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -30982,7 +30985,7 @@ countries = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -31009,7 +31012,7 @@ countries = {
 				
 			}
 		}
-		tolerated_cultures = {
+		accepted_cultures = {
 			mongolian_culture
 		}
 
@@ -58213,7 +58216,7 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
+		accepted_cultures = {
 			farsi_culture
 		}
 
@@ -58552,7 +58555,7 @@ countries = {
 			}
 		}
 
-		tolerated_cultures = {
+		accepted_cultures = {
 			farsi_culture
 		}
 		capital = darab
